@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajath Gowda — Interactive Resume</title>
+  <meta name="description" content="Netflix-style interactive resume of Rajath Gowda — choose a profile: Recruiter, Engineer, or Visitor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Tech / tool icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== PROFILE SELECT (Who's watching?) ===== -->
+  <section id="profile-gate" class="profile-gate">
+    <div class="profile-inner">
+      <h1 class="profile-title">Who's watching?</h1>
+      <ul class="profile-list" id="profile-list">
+        <li class="profile" data-profile="recruiter" tabindex="0">
+          <div class="avatar avatar-1"><span>RG</span></div>
+          <span class="profile-name">Recruiter</span>
+        </li>
+        <li class="profile" data-profile="engineer" tabindex="0">
+          <div class="avatar avatar-2"><span>&lt;/&gt;</span></div>
+          <span class="profile-name">Engineer</span>
+        </li>
+        <li class="profile" data-profile="visitor" tabindex="0">
+          <div class="avatar avatar-4"><span>🍿</span></div>
+          <span class="profile-name">Visitor</span>
+        </li>
+      </ul>
+      <p class="profile-hint">Pick a profile to tailor what you see.</p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN APP ===== -->
+  <div id="app" class="app hidden">
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <div class="nav-left">
+        <a href="#top" class="logo">RAJATH</a>
+        <nav class="nav-links" id="nav-links"></nav>
+      </div>
+      <div class="nav-right" id="nav-right"></div>
+    </header>
+
+    <span id="top"></span>
+
+    <!-- HERO / BILLBOARD -->
+    <section class="hero" id="hero">
+      <div class="hero-fade"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" id="hero-eyebrow"></p>
+        <h1 class="hero-title" id="hero-title"></h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+        <div class="hero-meta" id="hero-meta"></div>
+        <p class="hero-overview" id="hero-overview"></p>
+        <div class="hero-actions" id="hero-actions"></div>
+      </div>
+    </section>
+
+    <!-- ROWS -->
+    <main class="rows" id="rows"></main>
+
+    <footer class="footer">
+      <div class="footer-links" id="footer-links"></div>
+      <p class="footer-note">Netflix-style interactive resume • Rajath Gowda © <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay hidden" id="modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal-banner" id="modal-banner">
+        <div class="modal-banner-fade"></div>
+        <div class="modal-banner-text">
+          <h2 id="modal-title"></h2>
+          <p id="modal-subtitle"></p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-tags" id="modal-tags"></div>
+        <ul class="modal-list" id="modal-list"></ul>
+        <div class="modal-icons" id="modal-icons"></div>
+        <div class="modal-cta" id="modal-cta"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
