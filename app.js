@@ -10,12 +10,11 @@
 
 /* ---------- Links (update these) ---------- */
 const LINKS = {
-  // TODO: replace with your real profile URLs
-  linkedin: "https://www.linkedin.com/in/rajath-gowda/",
+  linkedin: "https://www.linkedin.com/in/rajath-g",
   github: "https://github.com/",            // your GitHub profile
   email: "mailto:rajathg64@gmail.com",
   phone: "tel:+918123200196",
-  resume: "RajathGowda-SDET-2026.pdf",
+  resume: "RajathGowda-SDE.pdf",
 };
 
 /* ---------- GitHub repos for the Engineer page (add later) ---------- */
@@ -46,6 +45,7 @@ const TECH = {
   mongodb:     { icon: "devicon-mongodb-plain colored", name: "MongoDB" },
   oracle:      { icon: "devicon-oracle-original colored", name: "Oracle" },
   spring:      { icon: "devicon-spring-plain colored", name: "Spring" },
+  springboot:  { icon: "devicon-spring-plain colored", name: "Spring Boot" },
   angular:     { icon: "devicon-angularjs-plain colored", name: "Angular" },
   html:        { icon: "devicon-html5-plain colored", name: "HTML5" },
   css:         { icon: "devicon-css3-plain colored", name: "CSS3" },
@@ -64,6 +64,17 @@ const TECH = {
   jfrog:       { emoji: "🐸", name: "JFrog" },
   shell:       { emoji: "🐚", name: "Shell" },
   plsql:       { emoji: "🗄️", name: "PL/SQL" },
+  microservices:{ emoji: "🧩", name: "Microservices" },
+  hibernate:   { emoji: "🗄️", name: "Hibernate" },
+  multithreading:{ emoji: "🧵", name: "Multithreading" },
+  designpatterns:{ emoji: "🧠", name: "Design Patterns" },
+  vertica:     { emoji: "📊", name: "Vertica" },
+  db2:         { emoji: "🗄️", name: "DB2" },
+  jmeter:      { emoji: "⚙️", name: "JMeter" },
+  ycrash:      { emoji: "💥", name: "YCrash" },
+  datadog:     { emoji: "📈", name: "Datadog" },
+  newman:      { emoji: "🧪", name: "Newman" },
+  robocorp:    { emoji: "🤖", name: "Robocorp" },
 };
 
 /* =========================================================
@@ -75,17 +86,17 @@ const RECRUITER = {
   hero: {
     eyebrow: "★ TOP PICK FOR YOUR TEAM",
     title: "Rajath Gowda",
-    subtitle: "SDET • AI, Test Automation & Performance Engineering",
+    subtitle: "Senior Software Development Engineer",
     meta: [
       { type: "badge", text: "Nearly a decade in IT" },
       { type: "text", text: "Bengaluru, India" },
-      { type: "green", text: "98% Match" },
+      { type: "green", text: "96% Match" },
     ],
     overview:
-      "SDET and automation engineer with nearly a decade of experience architecting and delivering " +
-      "automated quality, performance, and data-engineering solutions across the full software " +
-      "development lifecycle. Began as a hands-on developer before advancing into test automation, " +
-      "performance engineering, and AI-powered enterprise solutions.",
+      "Senior Software Development Engineer with nearly a decade of experience architecting and delivering " +
+      "reliable software, automation frameworks, performance engineering solutions, and recent AI-powered " +
+      "platforms across the full product lifecycle. Built solutions that improved release quality, reduced " +
+      "manual effort, and solved real business problems in Agile environments.",
     actions: [
       { label: "▶ Play Resume", cls: "btn-play", href: LINKS.resume, download: true },
       { label: "ⓘ More Info", cls: "btn-info", modalRef: ["experience", 0] },
@@ -98,52 +109,70 @@ const RECRUITER = {
         {
           grad: "card-grad-1", badge: "NOW STREAMING", title: "Hitachi Vantara Ltd.",
           logo: "images/hitachi.png", brand: { bg: "linear-gradient(135deg,#e60027,#7a0015)", fg: "#ffffff", text: "HITACHI VANTARA" },
-          meta: "SDET — AI & Automation · Sept 2020 – Present",
+          meta: "Senior Software Development Engineer",
+          metaTime: "Sept 2020 – Present",
           tags: ["AI/LLMs", "Automation", "Performance Eng"],
           icons: ["llm", "rag", "mcp", "selenium", "restassured", "grafana", "docker"],
-          modalSubtitle: "Software Development Engineer in Test · Bengaluru · IO Tahoe LLC merged into Hitachi Vantara",
+          modalSubtitle: "Senior Software Development Engineer · Bengaluru · Pentaho / Hitachi Vantara",
           points: [
-            "Design and deliver custom, AI-powered data identification solutions that automatically tag sensitive customer data with PII classifications using LLMs integrated with Pentaho Data Catalog (PDC) — achieving ~80% detection accuracy vs PDC's standard non-LLM solution.",
-            "Build agentic AI workflows leveraging RAG and prompt engineering to detect, classify, and govern PII across large, heterogeneous enterprise datasets.",
-            "Integrate Model Context Protocol (MCP) to connect LLMs with internal product tooling for reusable, context-aware AI services.",
-            "Architect and maintain end-to-end test automation frameworks — REST Assured + Postman for APIs and Selenium + Cucumber BDD for GUI — to maximize coverage and minimize regression risk.",
-            "Accelerate test creation with AI-assisted testing and GitHub Copilot, reducing manual scripting and review cycles.",
-            "Drive performance engineering by profiling throughput, latency, and resource utilization and tuning systems to meet enterprise scalability targets.",
-            "Implement an observability stack with Grafana, Prometheus, OpenObserve, Loki, and OpenTelemetry for live monitoring of data, logs, metrics, and performance.",
-            "Build and maintain CI/CD pipelines with Gradle, GitHub Actions, JFrog, Docker, and Jenkins.",
-            "Operate within Production Engineering to triage and resolve customer-reported issues each sprint in an Agile environment.",
+            "Designed and built custom, AI-powered data identification tools for enterprise customers that automatically tag sensitive customer data with PII classifications using LLMs integrated with Pentaho Data Catalog (PDC) to achieve ~80% detection accuracy relative to PDC's standard, non-LLM approach.",
+            "Led cross-functional engineering teams to design and build custom software solutions for Pentaho customers.",
+            "Architected and maintained end-to-end test automation frameworks, automating REST API testing with REST Assured and Postman and authoring BDD suites with Selenium and Cucumber for GUI automation, to maximize coverage and minimize regression risk.",
+            "Built an observability stack with Grafana, Prometheus, OpenObserve, Loki, and OpenTelemetry to monitor live application data, logs, metrics, and system performance, enabling proactive issue detection and resolution.",
+            "Operated within the Production Engineering team to triage and resolve customer-reported issues on a sprint basis in an Agile environment.",
+            "Built agentic AI workflows leveraging RAG and prompt engineering to detect, classify, and govern PII across large enterprise datasets.",
+            "Integrated Model Context Protocol (MCP) to connect LLMs with internal product tooling for reusable, context-aware AI services.",
           ],
         },
         {
           grad: "card-grad-2", badge: "DEV + LEADERSHIP", title: "Decathlon Sports India",
           logo: "images/decathlon.png", brand: { bg: "linear-gradient(135deg,#0082c3,#10437a)", fg: "#ffffff", text: "DECATHLON" },
-          meta: "IT Technical Leader · July 2019 – Sept 2020",
+          meta: "IT Technical Leader",
+          metaTime: "July 2019 – Sept 2020",
           tags: ["Java", "PL/SQL", "REST APIs"],
           icons: ["java", "plsql", "javascript", "postgres", "shell"],
           modalSubtitle: "IT Technical Leader · Bengaluru, India",
           points: [
-            "Implemented a data-archival solution using Shell and PL/SQL that reduced AWS server costs by ~50%, improved performance, and resolved longstanding issues.",
-            "Led the technical team in upgrading Openbravo billing software and PostgreSQL across all POS systems in India, delivering new features and improved stability.",
-            "Developed and integrated an API-based card-payment device using REST APIs, JavaScript, Java, and PL/SQL, reducing billing time and improving customer satisfaction.",
-            "Migrated the code repository from Mercurial to GitHub, strengthening security and release management.",
-            "Resolved real-time production incidents, improved code quality, and delivered strong customer support.",
+            "Implemented a data archival solution using Shell and PL/SQL that cut AWS server costs by ~50% while improving system performance and resolving longstanding data issues.",
+            "Led the technical team through an organization-wide upgrade of Openbravo billing software and PostgreSQL across all India POS systems, and rolled out new features and improved stability.",
+            "Designed and built Spring Boot based REST APIs to integrate Decathlon's billing software with the wireless card payment terminal, and this integration continued to power transactions across stores in India.",
+            "Migrated the code repository from Mercurial to GitHub and strengthened security and release management.",
+            "Resolved real-time production incidents while maintaining code quality and customer support standards.",
           ],
         },
         {
           grad: "card-grad-3", badge: "WHERE IT BEGAN", title: "Tech Mahindra Limited",
           logo: "images/techm.png", brand: { bg: "linear-gradient(135deg,#c8102e,#7a0a1d)", fg: "#ffffff", text: "TECH MAHINDRA" },
-          meta: "Application Developer · Sept 2016 – June 2019",
+          meta: "Application Developer",
+          metaTime: "Sept 2016 – June 2019",
           tags: ["Java", "JSP", "ETL"],
           icons: ["java", "javascript", "plsql", "html", "css"],
           modalSubtitle: "Application Developer · Bengaluru · The foundation: hands-on software development",
           points: [
-            "Developed web applications using Java, JSP, PL/SQL, JavaScript, HTML, and CSS to surface database statistics to end users.",
-            "Designed and delivered custom client solutions using Java, JavaScript, and PL/SQL based on business requirements.",
-            "Enhanced a custom ETL tool with new features, defect fixes, and UI improvements that boosted performance.",
+            "Developed web applications using Java, JSP, PL/SQL, JavaScript, HTML, and CSS to visualize database statistics for client users.",
+            "Designed and built custom client applications using Java, JavaScript, and PL/SQL based on business requirements.",
+            "Enhanced the internal ETL tool with new features, defect fixes, and UI improvements that boosted overall performance.",
             "Developed scheduled jobs (cron) for various business needs, reducing manual effort and improving efficiency.",
-            "Authored high-quality JUnit tests and automation scripts for unit testing.",
+            "Authored JUnit tests and automation scripts for unit testing.",
           ],
         },
+      ],
+    },
+    {
+      id: "projects", title: "Key Projects", sub: "Selected highlights",
+      cards: [
+        { grad: "card-grad-1", badge: "DATA PLATFORM", title: "Data Migration Platform", meta: "Pentaho (PDC) · Java + PDI/PDC",
+          tags: ["Java", "Pentaho", "Data Migration"], icons: ["java", "springboot", "oracle"], iconTop: ["java", "springboot"],
+          modalSubtitle: "Led a cross-functional team to build a data migration platform for heterogeneous systems",
+          points: ["Led a team of 4 to 6 engineers to design and build DataPipes, a Java-based platform that migrated data between heterogeneous source and target systems using Pentaho Data Integration (PDI) and Pentaho Data Catalog (PDC).", "Designed and developed custom Java modules packaged as executable JAR files that extended PDI and PDC with masking and encryption functions to protect sensitive data during cross-system transfers.", "Architected a modular pipeline design that supported multiple source and target data types without requiring pipeline-specific rework."] },
+        { grad: "card-grad-2", badge: "PAYMENTS", title: "Wireless Card Payment Integration", meta: "Decathlon Sports India · Spring Boot + REST APIs",
+          tags: ["Spring Boot", "REST APIs", "Payments"], icons: ["springboot", "javascript", "plsql"], iconTop: ["springboot", "javascript"],
+          modalSubtitle: "Integrated billing software with wireless card payment terminals across all Decathlon stores in India",
+          points: ["Designed and built Spring Boot based REST APIs to integrate Decathlon's billing software with the wireless card payment terminal.", "The integration continued to power card transactions across all Decathlon stores in India."] },
+        { grad: "card-grad-3", badge: "AI ENGINEERING", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
+          tags: ["LLMs", "RAG", "PII"], icons: ["llm", "rag", "mcp"], iconTop: ["llm", "rag"],
+          modalSubtitle: "Architected an LLM-based PII detection system layered on Pentaho Data Catalog",
+          points: ["Architected an LLM-based PII detection system layered on Pentaho Data Catalog (PDC) and improved detection accuracy by ~80% over PDC's native, non-LLM classifier.", "Used RAG-based retrieval pipelines and prompt engineering to identify and classify sensitive data across large enterprise datasets."] },
       ],
     },
     {
@@ -154,13 +183,13 @@ const RECRUITER = {
           modalSubtitle: "Artificial Intelligence & Agentic Workflows",
           points: ["LLMs (GPT, Claude, Gemini)", "Retrieval-Augmented Generation (RAG)", "Prompt Engineering", "AI Agents & Agentic Workflows", "Model Context Protocol (MCP)", "AI-Assisted Testing, GitHub Copilot"] },
         { grad: "card-grad-2", badge: "AUTOMATION", title: "Test Automation", meta: "API & UI frameworks",
-          tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman"], iconTop: ["selenium", "cucumber", "postman"],
+          tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman", "newman"], iconTop: ["selenium", "cucumber", "postman"],
           modalSubtitle: "Quality engineering & test frameworks",
-          points: ["Selenium, Cucumber (BDD/Gherkin)", "REST Assured, Postman", "JUnit, RPA", "API & UI Automation", "Test Framework Design"] },
+          points: ["Selenium, Cucumber (BDD/Gherkin)", "REST Assured, Postman, Newman", "JUnit, Robocorp", "API & UI Automation", "Pairwise test design and regression coverage"] },
         { grad: "card-grad-5", badge: "PERFORMANCE", title: "Performance Engineering", meta: "Profiling & tuning",
-          tags: ["Load Testing", "Observability", "Tuning"], icons: ["grafana", "prometheus", "otel"], iconTop: ["grafana", "prometheus", "otel"],
+          tags: ["Load Testing", "Observability", "Tuning"], icons: ["grafana", "prometheus", "otel", "jmeter", "datadog"], iconTop: ["grafana", "prometheus", "otel"],
           modalSubtitle: "Performance & reliability engineering",
-          points: ["Performance & Load Testing", "Latency & Throughput Profiling", "Application Tuning", "Observability-Driven Optimization", "Production Engineering"] },
+          points: ["Performance & Load Testing with JMeter", "Latency & Throughput Profiling", "Application Tuning", "Observability-Driven Optimization", "Production Engineering and incident triage"] },
         { grad: "card-grad-3", badge: "CODE", title: "Languages", meta: "Polyglot developer",
           tags: ["Java", "Python", "TypeScript"], icons: ["java", "python", "javascript", "typescript", "kotlin", "plsql"], iconTop: ["java", "python", "typescript"],
           modalSubtitle: "Programming languages",
@@ -168,18 +197,19 @@ const RECRUITER = {
         { grad: "card-grad-6", badge: "DEVOPS", title: "CI/CD & DevOps", meta: "Pipelines & containers",
           tags: ["GitHub Actions", "Docker", "K8s"], icons: ["docker", "kubernetes", "jenkins", "gradle", "jfrog"], iconTop: ["docker", "kubernetes", "jenkins"],
           modalSubtitle: "Build, ship, and deploy",
-          points: ["GitHub Actions, Jenkins", "Gradle, Maven, Apache Ant", "Docker, Kubernetes", "JFrog, Traefik"] },
+          points: ["GitHub Actions, Jenkins", "Gradle, Maven, Apache Ant", "Docker, Kubernetes", "AWS (S3, EC2, Lambda, Secrets Manager)", "JFrog, Traefik"] },
         { grad: "card-grad-4", badge: "DATA", title: "Data & Databases", meta: "SQL & data platforms",
-          tags: ["Oracle", "PostgreSQL", "MongoDB"], icons: ["oracle", "postgres", "mysql", "mongodb", "snowflake"], iconTop: ["oracle", "postgres", "mongodb"],
+          tags: ["Oracle", "PostgreSQL", "MongoDB"], icons: ["oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2"], iconTop: ["oracle", "postgres", "mongodb"],
           modalSubtitle: "Data engineering & databases",
-          points: ["Pentaho Data Catalog, Pentaho", "MongoDB, Oracle, PostgreSQL", "MySQL, MS SQL, Snowflake", "JDBC"] },
+          points: ["Pentaho Data Catalog, Pentaho", "MongoDB, Oracle, PostgreSQL", "MySQL, MS SQL, Snowflake", "Vertica, DB2", "JDBC"] },
       ],
     },
     {
       id: "techstack", title: "Tech Stack", sub: "The toolbox", variant: "tech",
       tech: ["java", "python", "javascript", "typescript", "kotlin", "selenium", "cucumber", "restassured",
-             "postman", "spring", "angular", "docker", "kubernetes", "jenkins", "gradle", "git", "github",
-             "grafana", "prometheus", "otel", "oracle", "postgres", "mysql", "mongodb", "snowflake", "jira", "llm", "mcp"],
+             "postman", "newman", "spring", "springboot", "microservices", "hibernate", "docker", "kubernetes",
+             "jenkins", "gradle", "git", "github", "grafana", "prometheus", "otel", "jmeter", "datadog",
+             "oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2", "jira", "llm", "mcp"],
     },
     {
       id: "education", title: "Education", sub: "Origin story",
@@ -196,8 +226,8 @@ const RECRUITER = {
           tags: ["Recognition"], modalSubtitle: "Tech Mahindra Ltd.", points: ["Awarded twice for outstanding contribution and delivery."] },
         { grad: "card-grad-2", badge: "AWARD", title: "Certificate of Appreciation", meta: "Decathlon · Jun 2020", emoji: "📜",
           tags: ["Recognition"], modalSubtitle: "Decathlon Sports India", points: ["Recognized for technical leadership and impactful delivery."] },
-        { grad: "card-grad-1", badge: "RECOGNITION", title: "AI Delivery Recognition", meta: "Hitachi Vantara", emoji: "🤖",
-          tags: ["AI", "Customer Impact"], modalSubtitle: "Hitachi Vantara Ltd.", points: ["Consistently recognized for delivering customer-facing AI solutions on Pentaho Data Catalog."] },
+        { grad: "card-grad-1", badge: "RECOGNITION", title: "AI Delivery Recognition", meta: "Hitachi Vantara · Dec 2025", emoji: "🤖",
+          tags: ["AI", "Customer Impact"], modalSubtitle: "Hitachi Vantara Ltd.", points: ["Recognized by leadership for identifying critical performance issues and driving improvements that enhanced system reliability.", "Consistently recognized for delivering customer-facing AI solutions on Pentaho Data Catalog."] },
       ],
     },
   ],
@@ -211,8 +241,8 @@ const ENGINEER = {
   glow: "rgba(31,142,241,0.35)",
   hero: {
     eyebrow: "</> BUILT BY RAJATH",
-    title: "The Build Log",
-    subtitle: "Automation • AI Engineering • Performance",
+    title: "Software Engineer",
+    subtitle: "Application Development • AI Engineering • Automation • Performance Engineering",
     meta: [
       { type: "badge", text: "Frameworks & Pipelines" },
       { type: "text", text: "AI / LLM Systems" },
@@ -220,8 +250,9 @@ const ENGINEER = {
     ],
     overview:
       "A closer look at what I actually build: AI-powered data solutions, end-to-end automation " +
-      "frameworks, performance tooling, and CI/CD pipelines. Dig into the projects below — and the " +
-      "GitHub row is reserved for repos I'll be adding here.",
+      "frameworks, performance tooling, and CI/CD pipelines. The projects below reflect the same " +
+      "Senior Software Development Engineer profile from the updated resume, with a stronger emphasis " +
+      "on agentic AI, platform engineering, and reliability work.",
     actions: [
       { label: "▶ View Projects", cls: "btn-play", scrollTo: "row-projects" },
       { label: "★ GitHub", cls: "btn-accent", href: LINKS.github, external: true },
@@ -235,9 +266,8 @@ const ENGINEER = {
           tags: ["LLMs", "RAG", "Data Governance"], icons: ["llm", "rag", "mcp"], iconTop: ["llm", "rag", "mcp"],
           modalSubtitle: "Custom AI data-identification engine for enterprise customers",
           points: [
-            "Problem: enterprises needed to locate & classify sensitive PII across massive, messy datasets where rule-based catalog scans fell short.",
-            "Approach: built an LLM-backed classification layer (RAG + prompt engineering) integrated directly into Pentaho Data Catalog.",
-            "Result: ~80% detection accuracy vs the standard non-LLM PDC solution, automatically tagging sensitive customer data with PII classifications.",
+            "Built an LLM-backed classification layer (RAG + prompt engineering) integrated directly into Pentaho Data Catalog.",
+            "Achieved ~80% detection accuracy vs the standard non-LLM PDC solution while automatically tagging sensitive customer data with PII classifications.",
             "Stack: LLMs (GPT/Claude/Gemini), RAG pipelines, MCP for tool access, Java/Python services.",
           ] },
         { grad: "card-grad-4", badge: "AI AGENTS", title: "Agentic AI + MCP Integration", meta: "Context-aware AI services",
@@ -249,29 +279,30 @@ const ENGINEER = {
             "Packaged reusable AI services consumed across multiple product use cases.",
           ] },
         { grad: "card-grad-2", badge: "AUTOMATION", title: "End-to-End Test Automation", meta: "API + UI frameworks",
-          tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman"], iconTop: ["selenium", "cucumber", "postman"],
+          tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman", "newman"], iconTop: ["selenium", "cucumber", "postman"],
           modalSubtitle: "Framework architecture for coverage & speed",
           points: [
             "Architected reusable automation frameworks for both API and GUI layers.",
-            "REST Assured + Postman for API verification; Selenium + Cucumber BDD for UI flows.",
+            "REST Assured + Postman + Newman for API verification; Selenium + Cucumber BDD for UI flows.",
             "Cut regression risk and sped up releases; accelerated test authoring with AI/Copilot.",
+            "Built smoke test coverage and BDD suites across core product workflows.",
           ] },
         { grad: "card-grad-5", badge: "PERFORMANCE", title: "Observability & Perf Tuning", meta: "Live monitoring + optimization",
-          tags: ["Grafana", "Prometheus", "OpenTelemetry"], icons: ["grafana", "prometheus", "otel", "loki"], iconTop: ["grafana", "prometheus", "loki"],
+          tags: ["Grafana", "Prometheus", "OpenTelemetry"], icons: ["grafana", "prometheus", "otel", "loki", "jmeter", "datadog"], iconTop: ["grafana", "prometheus", "loki"],
           modalSubtitle: "Performance engineering & production reliability",
           points: [
             "Profiled throughput, latency, and resource usage to hit enterprise scalability targets.",
             "Stood up Grafana + Prometheus + OpenObserve + Loki + OpenTelemetry for full visibility.",
-            "Enabled proactive detection and faster resolution of production incidents.",
+            "Used the stack to identify Java performance bottlenecks, memory leak issues, and caching problems.",
           ] },
         { grad: "card-grad-3", badge: "IMPACT", title: "Data Archival — 50% Cost Cut", meta: "Decathlon · Shell + PL/SQL",
           tags: ["Shell", "PL/SQL", "AWS"], icons: ["shell", "plsql"], iconTop: ["shell", "plsql"],
           modalSubtitle: "Infrastructure cost optimization",
           points: ["Designed a data-archival solution in Shell + PL/SQL.", "Reduced AWS server cost by ~50% while improving performance.", "Cleared several longstanding production issues."] },
-        { grad: "card-grad-6", badge: "CI/CD", title: "CI/CD Pipeline Engineering", meta: "Automated quality gates",
-          tags: ["GitHub Actions", "Docker", "Jenkins"], icons: ["docker", "jenkins", "gradle", "jfrog", "github"], iconTop: ["docker", "jenkins", "github"],
-          modalSubtitle: "Continuous integration & delivery",
-          points: ["Built pipelines with Gradle, GitHub Actions, JFrog, Docker, and Jenkins.", "Enforced code quality and systematic testing for smooth deployments."] },
+        { grad: "card-grad-6", badge: "CI/CD", title: "Data Migration Platform", meta: "Pentaho · Java + PDI/PDC",
+          tags: ["Java", "Pentaho", "Data Migration"], icons: ["java", "springboot", "oracle"], iconTop: ["java", "springboot"],
+          modalSubtitle: "Led a cross-functional team to build a data migration platform for heterogeneous systems",
+          points: ["Led a team of 4 to 6 engineers to design and build DataPipes for source-to-target migrations across heterogeneous systems.", "Developed custom Java modules to extend Pentaho Data Integration and Data Catalog with masking and encryption capabilities.", "Supported a modular pipeline pattern that avoided pipeline-specific rework and kept delivery timelines on track."] },
       ],
     },
     {
@@ -280,9 +311,10 @@ const ENGINEER = {
     },
     {
       id: "techstack", title: "Tech Stack", sub: "What I build with", variant: "tech",
-      tech: ["java", "python", "typescript", "selenium", "cucumber", "restassured", "spring", "docker",
-             "kubernetes", "jenkins", "gradle", "git", "github", "grafana", "prometheus", "otel",
-             "postgres", "mongodb", "llm", "rag", "mcp", "copilot"],
+      tech: ["java", "python", "typescript", "selenium", "cucumber", "restassured", "spring", "springboot",
+             "microservices", "hibernate", "docker", "kubernetes", "jenkins", "gradle", "git", "github",
+             "grafana", "prometheus", "otel", "jmeter", "datadog", "postgres", "mongodb", "llm", "rag",
+             "mcp", "copilot"],
     },
     {
       id: "experiments", title: "Lab / Experiments", sub: "Tinkering zone",
@@ -307,7 +339,7 @@ const VISITOR = {
   hero: {
     eyebrow: "🍿 NOW PLAYING",
     title: "The Rajath Show",
-    subtitle: "A dramedy about sports, gaming, travel & questionable photography",
+    subtitle: "Senior SDE • sports, gaming, travel & questionable photography",
     meta: [
       { type: "badge", text: "Unscripted" },
       { type: "text", text: "Bengaluru, India" },
@@ -447,11 +479,14 @@ function buildAction(a) {
   }
   const btn = create("button", `btn ${a.cls}`);
   btn.textContent = a.label;
-  if (a.scrollTo) btn.addEventListener("click", () => document.getElementById(a.scrollTo)?.scrollIntoView({ behavior: "smooth" }));
+  if (a.scrollTo) btn.addEventListener("click", () => {
+    const target = document.getElementById(a.scrollTo);
+    if (target) target.scrollIntoView({ behavior: "smooth" });
+  });
   if (a.modalRef) btn.addEventListener("click", () => {
     const [rowId, idx] = a.modalRef;
     const row = PROFILES[CURRENT].rows.find((r) => r.id === rowId);
-    if (row?.cards?.[idx]) openModal(row.cards[idx]);
+    if (row && row.cards && row.cards[idx]) openModal(row.cards[idx]);
   });
   return btn;
 }
@@ -607,7 +642,12 @@ function buildCard(card) {
   if (!isPoster) {
     const title = create("div", "card-title"); title.textContent = card.title; body.appendChild(title);
   }
-  if (card.meta) { const meta = create("div", "card-meta"); meta.textContent = card.meta; body.appendChild(meta); }
+  if (card.meta || card.metaTime) {
+    const metaStack = create("div", "card-meta-stack");
+    if (card.meta) { const meta = create("div", "card-meta"); meta.textContent = card.meta; metaStack.appendChild(meta); }
+    if (card.metaTime) { const metaTime = create("div", "card-meta-secondary"); metaTime.textContent = card.metaTime; metaStack.appendChild(metaTime); }
+    body.appendChild(metaStack);
+  }
   if (card.tags && card.tags.length) {
     const tags = create("div", "card-tags");
     card.tags.forEach((t) => { const tag = create("span", "tag"); tag.textContent = t; tags.appendChild(tag); });
