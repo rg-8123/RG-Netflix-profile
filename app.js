@@ -25,56 +25,56 @@ const GITHUB_REPOS = [
 
 /* ---------- Tech stack (devicon classes or emoji fallback) ---------- */
 const TECH = {
-  java:        { icon: "devicon-java-plain colored", name: "Java" },
-  python:      { icon: "devicon-python-plain colored", name: "Python" },
-  javascript:  { icon: "devicon-javascript-plain colored", name: "JavaScript" },
-  typescript:  { icon: "devicon-typescript-plain colored", name: "TypeScript" },
-  kotlin:      { icon: "devicon-kotlin-plain colored", name: "Kotlin" },
-  selenium:    { icon: "devicon-selenium-original colored", name: "Selenium" },
-  postman:     { icon: "devicon-postman-plain colored", name: "Postman" },
-  docker:      { icon: "devicon-docker-plain colored", name: "Docker" },
-  kubernetes:  { icon: "devicon-kubernetes-plain colored", name: "Kubernetes" },
-  jenkins:     { icon: "devicon-jenkins-line colored", name: "Jenkins" },
-  gradle:      { icon: "devicon-gradle-plain colored", name: "Gradle" },
-  git:         { icon: "devicon-git-plain colored", name: "Git" },
-  github:      { icon: "devicon-github-original", name: "GitHub" },
-  grafana:     { icon: "devicon-grafana-original colored", name: "Grafana" },
-  prometheus:  { icon: "devicon-prometheus-original colored", name: "Prometheus" },
-  postgres:    { icon: "devicon-postgresql-plain colored", name: "PostgreSQL" },
-  mysql:       { icon: "devicon-mysql-plain colored", name: "MySQL" },
-  mongodb:     { icon: "devicon-mongodb-plain colored", name: "MongoDB" },
-  oracle:      { icon: "devicon-oracle-original colored", name: "Oracle" },
-  spring:      { icon: "devicon-spring-plain colored", name: "Spring" },
-  springboot:  { icon: "devicon-spring-plain colored", name: "Spring Boot" },
-  angular:     { icon: "devicon-angularjs-plain colored", name: "Angular" },
-  html:        { icon: "devicon-html5-plain colored", name: "HTML5" },
-  css:         { icon: "devicon-css3-plain colored", name: "CSS3" },
-  jira:        { icon: "devicon-jira-plain colored", name: "Jira" },
-  intellij:    { icon: "devicon-intellij-plain colored", name: "IntelliJ" },
+  java: { icon: "devicon-java-plain colored", name: "Java" },
+  python: { icon: "devicon-python-plain colored", name: "Python" },
+  javascript: { icon: "devicon-javascript-plain colored", name: "JavaScript" },
+  typescript: { icon: "devicon-typescript-plain colored", name: "TypeScript" },
+  kotlin: { icon: "devicon-kotlin-plain colored", name: "Kotlin" },
+  selenium: { icon: "devicon-selenium-original colored", name: "Selenium" },
+  postman: { icon: "devicon-postman-plain colored", name: "Postman" },
+  docker: { icon: "devicon-docker-plain colored", name: "Docker" },
+  kubernetes: { icon: "devicon-kubernetes-plain colored", name: "Kubernetes" },
+  jenkins: { icon: "devicon-jenkins-line colored", name: "Jenkins" },
+  gradle: { icon: "devicon-gradle-plain colored", name: "Gradle" },
+  git: { icon: "devicon-git-plain colored", name: "Git" },
+  github: { icon: "devicon-github-original", name: "GitHub" },
+  grafana: { icon: "devicon-grafana-original colored", name: "Grafana" },
+  prometheus: { icon: "devicon-prometheus-original colored", name: "Prometheus" },
+  postgres: { icon: "devicon-postgresql-plain colored", name: "PostgreSQL" },
+  mysql: { icon: "devicon-mysql-plain colored", name: "MySQL" },
+  mongodb: { icon: "devicon-mongodb-plain colored", name: "MongoDB" },
+  oracle: { icon: "devicon-oracle-original colored", name: "Oracle" },
+  spring: { icon: "devicon-spring-plain colored", name: "Spring" },
+  springboot: { icon: "devicon-spring-plain colored", name: "Spring Boot" },
+  angular: { icon: "devicon-angularjs-plain colored", name: "Angular" },
+  html: { icon: "devicon-html5-plain colored", name: "HTML5" },
+  css: { icon: "devicon-css3-plain colored", name: "CSS3" },
+  jira: { icon: "devicon-jira-plain colored", name: "Jira" },
+  intellij: { icon: "devicon-intellij-plain colored", name: "IntelliJ" },
   // emoji fallbacks (no devicon available)
-  cucumber:    { emoji: "🥒", name: "Cucumber" },
+  cucumber: { emoji: "🥒", name: "Cucumber" },
   restassured: { emoji: "🧪", name: "REST Assured" },
-  llm:         { emoji: "🤖", name: "LLMs" },
-  rag:         { emoji: "🔎", name: "RAG" },
-  mcp:         { emoji: "🔗", name: "MCP" },
-  copilot:     { emoji: "🧠", name: "Copilot" },
-  otel:        { emoji: "📡", name: "OpenTelemetry" },
-  loki:        { emoji: "🪵", name: "Loki" },
-  snowflake:   { emoji: "❄️", name: "Snowflake" },
-  jfrog:       { emoji: "🐸", name: "JFrog" },
-  shell:       { emoji: "🐚", name: "Shell" },
-  plsql:       { emoji: "🗄️", name: "PL/SQL" },
-  microservices:{ emoji: "🧩", name: "Microservices" },
-  hibernate:   { emoji: "🗄️", name: "Hibernate" },
-  multithreading:{ emoji: "🧵", name: "Multithreading" },
-  designpatterns:{ emoji: "🧠", name: "Design Patterns" },
-  vertica:     { emoji: "📊", name: "Vertica" },
-  db2:         { emoji: "🗄️", name: "DB2" },
-  jmeter:      { emoji: "⚙️", name: "JMeter" },
-  ycrash:      { emoji: "💥", name: "YCrash" },
-  datadog:     { emoji: "📈", name: "Datadog" },
-  newman:      { emoji: "🧪", name: "Newman" },
-  robocorp:    { emoji: "🤖", name: "Robocorp" },
+  llm: { emoji: "🤖", name: "LLMs" },
+  rag: { emoji: "🔎", name: "RAG" },
+  mcp: { emoji: "🔗", name: "MCP" },
+  copilot: { emoji: "🧠", name: "Copilot" },
+  otel: { emoji: "📡", name: "OpenTelemetry" },
+  loki: { emoji: "🪵", name: "Loki" },
+  snowflake: { emoji: "❄️", name: "Snowflake" },
+  jfrog: { emoji: "🐸", name: "JFrog" },
+  shell: { emoji: "🐚", name: "Shell" },
+  plsql: { emoji: "🗄️", name: "PL/SQL" },
+  microservices: { emoji: "🧩", name: "Microservices" },
+  hibernate: { emoji: "🗄️", name: "Hibernate" },
+  multithreading: { emoji: "🧵", name: "Multithreading" },
+  designpatterns: { emoji: "🧠", name: "Design Patterns" },
+  vertica: { emoji: "📊", name: "Vertica" },
+  db2: { emoji: "🗄️", name: "DB2" },
+  jmeter: { emoji: "⚙️", name: "JMeter" },
+  ycrash: { emoji: "💥", name: "YCrash" },
+  datadog: { emoji: "📈", name: "Datadog" },
+  newman: { emoji: "🧪", name: "Newman" },
+  robocorp: { emoji: "🤖", name: "Robocorp" },
 };
 
 /* =========================================================
@@ -161,73 +161,99 @@ const RECRUITER = {
     {
       id: "projects", title: "Key Projects", sub: "Selected highlights",
       cards: [
-        { grad: "card-grad-1", badge: "DATA PLATFORM", title: "Data Migration Platform", meta: "Pentaho (PDC) · Java + PDI/PDC",
+        {
+          grad: "card-grad-1", badge: "DATA PLATFORM", title: "Data Migration Platform", meta: "Pentaho (PDC) · Java + PDI/PDC",
           tags: ["Java", "Pentaho", "Data Migration"], icons: ["java", "springboot", "oracle"], iconTop: ["java", "springboot"],
           modalSubtitle: "Led a cross-functional team to build a data migration platform for heterogeneous systems",
-          points: ["Led a team of 4 to 6 engineers to design and build DataPipes, a Java-based platform that migrated data between heterogeneous source and target systems using Pentaho Data Integration (PDI) and Pentaho Data Catalog (PDC).", "Designed and developed custom Java modules packaged as executable JAR files that extended PDI and PDC with masking and encryption functions to protect sensitive data during cross-system transfers.", "Architected a modular pipeline design that supported multiple source and target data types without requiring pipeline-specific rework."] },
-        { grad: "card-grad-2", badge: "PAYMENTS", title: "Wireless Card Payment Integration", meta: "Decathlon Sports India · Spring Boot + REST APIs",
+          points: ["Led a team of 4 to 6 engineers to design and build DataPipes, a Java-based platform that migrated data between heterogeneous source and target systems using Pentaho Data Integration (PDI) and Pentaho Data Catalog (PDC).", "Designed and developed custom Java modules packaged as executable JAR files that extended PDI and PDC with masking and encryption functions to protect sensitive data during cross-system transfers.", "Architected a modular pipeline design that supported multiple source and target data types without requiring pipeline-specific rework."]
+        },
+        {
+          grad: "card-grad-2", badge: "PAYMENTS", title: "Wireless Card Payment Integration", meta: "Decathlon Sports India · Spring Boot + REST APIs",
           tags: ["Spring Boot", "REST APIs", "Payments"], icons: ["springboot", "javascript", "plsql"], iconTop: ["springboot", "javascript"],
           modalSubtitle: "Integrated billing software with wireless card payment terminals across all Decathlon stores in India",
-          points: ["Designed and built Spring Boot based REST APIs to integrate Decathlon's billing software with the wireless card payment terminal.", "The integration continued to power card transactions across all Decathlon stores in India."] },
-        { grad: "card-grad-3", badge: "AI ENGINEERING", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
+          points: ["Designed and built Spring Boot based REST APIs to integrate Decathlon's billing software with the wireless card payment terminal.", "The integration continued to power card transactions across all Decathlon stores in India."]
+        },
+        {
+          grad: "card-grad-3", badge: "AI ENGINEERING", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
           tags: ["LLMs", "RAG", "PII"], icons: ["llm", "rag", "mcp"], iconTop: ["llm", "rag"],
           modalSubtitle: "Architected an LLM-based PII detection system layered on Pentaho Data Catalog",
-          points: ["Architected an LLM-based PII detection system layered on Pentaho Data Catalog (PDC) and improved detection accuracy by ~80% over PDC's native, non-LLM classifier.", "Used RAG-based retrieval pipelines and prompt engineering to identify and classify sensitive data across large enterprise datasets."] },
+          points: ["Architected an LLM-based PII detection system layered on Pentaho Data Catalog (PDC) and improved detection accuracy by ~80% over PDC's native, non-LLM classifier.", "Used RAG-based retrieval pipelines and prompt engineering to identify and classify sensitive data across large enterprise datasets."]
+        },
       ],
     },
     {
       id: "skills", title: "Skills", sub: "My genres",
       cards: [
-        { grad: "card-grad-1", badge: "AI / ML", title: "AI & Machine Learning", meta: "LLMs, RAG, Agentic AI",
+        {
+          grad: "card-grad-1", badge: "AI / ML", title: "AI & Machine Learning", meta: "LLMs, RAG, Agentic AI",
           tags: ["GPT", "Claude", "Gemini", "MCP"], icons: ["llm", "rag", "mcp", "copilot"], iconTop: ["llm", "rag", "copilot"],
           modalSubtitle: "Artificial Intelligence & Agentic Workflows",
-          points: ["LLMs (GPT, Claude, Gemini)", "Retrieval-Augmented Generation (RAG)", "Prompt Engineering", "AI Agents & Agentic Workflows", "Model Context Protocol (MCP)", "AI-Assisted Testing, GitHub Copilot"] },
-        { grad: "card-grad-2", badge: "AUTOMATION", title: "Test Automation", meta: "API & UI frameworks",
+          points: ["LLMs (GPT, Claude, Gemini)", "Retrieval-Augmented Generation (RAG)", "Prompt Engineering", "AI Agents & Agentic Workflows", "Model Context Protocol (MCP)", "AI-Assisted Testing, GitHub Copilot"]
+        },
+        {
+          grad: "card-grad-2", badge: "AUTOMATION", title: "Test Automation", meta: "API & UI frameworks",
           tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman", "newman"], iconTop: ["selenium", "cucumber", "postman"],
           modalSubtitle: "Quality engineering & test frameworks",
-          points: ["Selenium, Cucumber (BDD/Gherkin)", "REST Assured, Postman, Newman", "JUnit, Robocorp", "API & UI Automation", "Pairwise test design and regression coverage"] },
-        { grad: "card-grad-5", badge: "PERFORMANCE", title: "Performance Engineering", meta: "Profiling & tuning",
+          points: ["Selenium, Cucumber (BDD/Gherkin)", "REST Assured, Postman, Newman", "JUnit, Robocorp", "API & UI Automation", "Pairwise test design and regression coverage"]
+        },
+        {
+          grad: "card-grad-5", badge: "PERFORMANCE", title: "Performance Engineering", meta: "Profiling & tuning",
           tags: ["Load Testing", "Observability", "Tuning"], icons: ["grafana", "prometheus", "otel", "jmeter", "datadog"], iconTop: ["grafana", "prometheus", "otel"],
           modalSubtitle: "Performance & reliability engineering",
-          points: ["Performance & Load Testing with JMeter", "Latency & Throughput Profiling", "Application Tuning", "Observability-Driven Optimization", "Production Engineering and incident triage"] },
-        { grad: "card-grad-3", badge: "CODE", title: "Languages", meta: "Polyglot developer",
+          points: ["Performance & Load Testing with JMeter", "Latency & Throughput Profiling", "Application Tuning", "Observability-Driven Optimization", "Production Engineering and incident triage"]
+        },
+        {
+          grad: "card-grad-3", badge: "CODE", title: "Languages", meta: "Polyglot developer",
           tags: ["Java", "Python", "TypeScript"], icons: ["java", "python", "javascript", "typescript", "kotlin", "plsql"], iconTop: ["java", "python", "typescript"],
           modalSubtitle: "Programming languages",
-          points: ["Java", "Python", "JavaScript / TypeScript", "Kotlin", "PL/SQL", "Shell"] },
-        { grad: "card-grad-6", badge: "DEVOPS", title: "CI/CD & DevOps", meta: "Pipelines & containers",
+          points: ["Java", "Python", "JavaScript / TypeScript", "Kotlin", "PL/SQL", "Shell"]
+        },
+        {
+          grad: "card-grad-6", badge: "DEVOPS", title: "CI/CD & DevOps", meta: "Pipelines & containers",
           tags: ["GitHub Actions", "Docker", "K8s"], icons: ["docker", "kubernetes", "jenkins", "gradle", "jfrog"], iconTop: ["docker", "kubernetes", "jenkins"],
           modalSubtitle: "Build, ship, and deploy",
-          points: ["GitHub Actions, Jenkins", "Gradle, Maven, Apache Ant", "Docker, Kubernetes", "AWS (S3, EC2, Lambda, Secrets Manager)", "JFrog, Traefik"] },
-        { grad: "card-grad-4", badge: "DATA", title: "Data & Databases", meta: "SQL & data platforms",
+          points: ["GitHub Actions, Jenkins", "Gradle, Maven, Apache Ant", "Docker, Kubernetes", "AWS (S3, EC2, Lambda, Secrets Manager)", "JFrog, Traefik"]
+        },
+        {
+          grad: "card-grad-4", badge: "DATA", title: "Data & Databases", meta: "SQL & data platforms",
           tags: ["Oracle", "PostgreSQL", "MongoDB"], icons: ["oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2"], iconTop: ["oracle", "postgres", "mongodb"],
           modalSubtitle: "Data engineering & databases",
-          points: ["Pentaho Data Catalog, Pentaho", "MongoDB, Oracle, PostgreSQL", "MySQL, MS SQL, Snowflake", "Vertica, DB2", "JDBC"] },
+          points: ["Pentaho Data Catalog, Pentaho", "MongoDB, Oracle, PostgreSQL", "MySQL, MS SQL, Snowflake", "Vertica, DB2", "JDBC"]
+        },
       ],
     },
     {
       id: "techstack", title: "Tech Stack", sub: "The toolbox", variant: "tech",
       tech: ["java", "python", "javascript", "typescript", "kotlin", "selenium", "cucumber", "restassured",
-             "postman", "newman", "spring", "springboot", "microservices", "hibernate", "docker", "kubernetes",
-             "jenkins", "gradle", "git", "github", "grafana", "prometheus", "otel", "jmeter", "datadog",
-             "oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2", "jira", "llm", "mcp"],
+        "postman", "newman", "spring", "springboot", "microservices", "hibernate", "docker", "kubernetes",
+        "jenkins", "gradle", "git", "github", "grafana", "prometheus", "otel", "jmeter", "datadog",
+        "oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2", "jira", "llm", "mcp"],
     },
     {
       id: "education", title: "Education", sub: "Origin story",
       cards: [
-        { grad: "card-grad-2", badge: "DEGREE", title: "B.E., Electronics & Communications", meta: "Aug 2012 – June 2016", emoji: "🎓",
+        {
+          grad: "card-grad-2", badge: "DEGREE", title: "B.E., Electronics & Communications", meta: "Aug 2012 – June 2016", emoji: "🎓",
           tags: ["Engineering", "ECE"], modalSubtitle: "New Horizon College of Engineering, Bengaluru",
-          points: ["Bachelor of Engineering in Electronics & Communications Engineering.", "New Horizon College of Engineering, Bengaluru.", "Foundation in systems, electronics, and software fundamentals."] },
+          points: ["Bachelor of Engineering in Electronics & Communications Engineering.", "New Horizon College of Engineering, Bengaluru.", "Foundation in systems, electronics, and software fundamentals."]
+        },
       ],
     },
     {
       id: "achievements", title: "Achievements & Awards", sub: "Award-winning",
       cards: [
-        { grad: "card-grad-3", badge: "AWARD", title: "Pat on the Back", meta: "Tech Mahindra · Dec 2017 & Dec 2018", emoji: "🏆",
-          tags: ["Recognition"], modalSubtitle: "Tech Mahindra Ltd.", points: ["Awarded twice for outstanding contribution and delivery."] },
-        { grad: "card-grad-2", badge: "AWARD", title: "Certificate of Appreciation", meta: "Decathlon · Jun 2020", emoji: "📜",
-          tags: ["Recognition"], modalSubtitle: "Decathlon Sports India", points: ["Recognized for technical leadership and impactful delivery."] },
-        { grad: "card-grad-1", badge: "RECOGNITION", title: "AI Delivery Recognition", meta: "Hitachi Vantara · Dec 2025", emoji: "🤖",
-          tags: ["AI", "Customer Impact"], modalSubtitle: "Hitachi Vantara Ltd.", points: ["Recognized by leadership for identifying critical performance issues and driving improvements that enhanced system reliability.", "Consistently recognized for delivering customer-facing AI solutions on Pentaho Data Catalog."] },
+        {
+          grad: "card-grad-3", badge: "AWARD", title: "Pat on the Back", meta: "Tech Mahindra · Dec 2017 & Dec 2018", emoji: "🏆",
+          tags: ["Recognition"], modalSubtitle: "Tech Mahindra Ltd.", points: ["Awarded twice for outstanding contribution and delivery."]
+        },
+        {
+          grad: "card-grad-2", badge: "AWARD", title: "Certificate of Appreciation", meta: "Decathlon · Jun 2020", emoji: "📜",
+          tags: ["Recognition"], modalSubtitle: "Decathlon Sports India", points: ["Recognized for technical leadership and impactful delivery."]
+        },
+        {
+          grad: "card-grad-1", badge: "RECOGNITION", title: "AI Delivery Recognition", meta: "Hitachi Vantara · Dec 2025", emoji: "🤖",
+          tags: ["AI", "Customer Impact"], modalSubtitle: "Hitachi Vantara Ltd.", points: ["Recognized by leadership for identifying critical performance issues and driving improvements that enhanced system reliability.", "Consistently recognized for delivering customer-facing AI solutions on Pentaho Data Catalog."]
+        },
       ],
     },
   ],
@@ -262,23 +288,28 @@ const ENGINEER = {
     {
       id: "projects", title: "Featured Projects", sub: "Deep dives",
       cards: [
-        { grad: "card-grad-1", badge: "AI · FLAGSHIP", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
+        {
+          grad: "card-grad-1", badge: "AI · FLAGSHIP", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
           tags: ["LLMs", "RAG", "Data Governance"], icons: ["llm", "rag", "mcp"], iconTop: ["llm", "rag", "mcp"],
           modalSubtitle: "Custom AI data-identification engine for enterprise customers",
           points: [
             "Built an LLM-backed classification layer (RAG + prompt engineering) integrated directly into Pentaho Data Catalog.",
             "Achieved ~80% detection accuracy vs the standard non-LLM PDC solution while automatically tagging sensitive customer data with PII classifications.",
             "Stack: LLMs (GPT/Claude/Gemini), RAG pipelines, MCP for tool access, Java/Python services.",
-          ] },
-        { grad: "card-grad-4", badge: "AI AGENTS", title: "Agentic AI + MCP Integration", meta: "Context-aware AI services",
+          ]
+        },
+        {
+          grad: "card-grad-4", badge: "AI AGENTS", title: "Agentic AI + MCP Integration", meta: "Context-aware AI services",
           tags: ["Agentic AI", "MCP", "Prompt Eng"], icons: ["mcp", "llm", "copilot"], iconTop: ["mcp", "llm", "copilot"],
           modalSubtitle: "Connecting LLMs to internal product tooling",
           points: [
             "Designed agentic workflows that detect, classify, and govern data with minimal human steering.",
             "Integrated Model Context Protocol (MCP) so LLMs can call internal product tools safely.",
             "Packaged reusable AI services consumed across multiple product use cases.",
-          ] },
-        { grad: "card-grad-2", badge: "AUTOMATION", title: "End-to-End Test Automation", meta: "API + UI frameworks",
+          ]
+        },
+        {
+          grad: "card-grad-2", badge: "AUTOMATION", title: "End-to-End Test Automation", meta: "API + UI frameworks",
           tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman", "newman"], iconTop: ["selenium", "cucumber", "postman"],
           modalSubtitle: "Framework architecture for coverage & speed",
           points: [
@@ -286,23 +317,30 @@ const ENGINEER = {
             "REST Assured + Postman + Newman for API verification; Selenium + Cucumber BDD for UI flows.",
             "Cut regression risk and sped up releases; accelerated test authoring with AI/Copilot.",
             "Built smoke test coverage and BDD suites across core product workflows.",
-          ] },
-        { grad: "card-grad-5", badge: "PERFORMANCE", title: "Observability & Perf Tuning", meta: "Live monitoring + optimization",
+          ]
+        },
+        {
+          grad: "card-grad-5", badge: "PERFORMANCE", title: "Observability & Perf Tuning", meta: "Live monitoring + optimization",
           tags: ["Grafana", "Prometheus", "OpenTelemetry"], icons: ["grafana", "prometheus", "otel", "loki", "jmeter", "datadog"], iconTop: ["grafana", "prometheus", "loki"],
           modalSubtitle: "Performance engineering & production reliability",
           points: [
             "Profiled throughput, latency, and resource usage to hit enterprise scalability targets.",
             "Stood up Grafana + Prometheus + OpenObserve + Loki + OpenTelemetry for full visibility.",
             "Used the stack to identify Java performance bottlenecks, memory leak issues, and caching problems.",
-          ] },
-        { grad: "card-grad-3", badge: "IMPACT", title: "Data Archival — 50% Cost Cut", meta: "Decathlon · Shell + PL/SQL",
+          ]
+        },
+        {
+          grad: "card-grad-3", badge: "IMPACT", title: "Data Archival — 50% Cost Cut", meta: "Decathlon · Shell + PL/SQL",
           tags: ["Shell", "PL/SQL", "AWS"], icons: ["shell", "plsql"], iconTop: ["shell", "plsql"],
           modalSubtitle: "Infrastructure cost optimization",
-          points: ["Designed a data-archival solution in Shell + PL/SQL.", "Reduced AWS server cost by ~50% while improving performance.", "Cleared several longstanding production issues."] },
-        { grad: "card-grad-6", badge: "CI/CD", title: "Data Migration Platform", meta: "Pentaho · Java + PDI/PDC",
+          points: ["Designed a data-archival solution in Shell + PL/SQL.", "Reduced AWS server cost by ~50% while improving performance.", "Cleared several longstanding production issues."]
+        },
+        {
+          grad: "card-grad-6", badge: "CI/CD", title: "Data Migration Platform", meta: "Pentaho · Java + PDI/PDC",
           tags: ["Java", "Pentaho", "Data Migration"], icons: ["java", "springboot", "oracle"], iconTop: ["java", "springboot"],
           modalSubtitle: "Led a cross-functional team to build a data migration platform for heterogeneous systems",
-          points: ["Led a team of 4 to 6 engineers to design and build DataPipes for source-to-target migrations across heterogeneous systems.", "Developed custom Java modules to extend Pentaho Data Integration and Data Catalog with masking and encryption capabilities.", "Supported a modular pipeline pattern that avoided pipeline-specific rework and kept delivery timelines on track."] },
+          points: ["Led a team of 4 to 6 engineers to design and build DataPipes for source-to-target migrations across heterogeneous systems.", "Developed custom Java modules to extend Pentaho Data Integration and Data Catalog with masking and encryption capabilities.", "Supported a modular pipeline pattern that avoided pipeline-specific rework and kept delivery timelines on track."]
+        },
       ],
     },
     {
@@ -312,26 +350,30 @@ const ENGINEER = {
     {
       id: "techstack", title: "Tech Stack", sub: "What I build with", variant: "tech",
       tech: ["java", "python", "typescript", "selenium", "cucumber", "restassured", "spring", "springboot",
-             "microservices", "hibernate", "docker", "kubernetes", "jenkins", "gradle", "git", "github",
-             "grafana", "prometheus", "otel", "jmeter", "datadog", "postgres", "mongodb", "llm", "rag",
-             "mcp", "copilot"],
+        "microservices", "hibernate", "docker", "kubernetes", "jenkins", "gradle", "git", "github",
+        "grafana", "prometheus", "otel", "jmeter", "datadog", "postgres", "mongodb", "llm", "rag",
+        "mcp", "copilot"],
     },
     {
       id: "experiments", title: "Lab / Experiments", sub: "Tinkering zone",
       cards: [
-        { grad: "card-grad-4", badge: "WIP", title: "AI Agent Playground", meta: "RAG + tools sandbox",
+        {
+          grad: "card-grad-4", badge: "WIP", title: "AI Agent Playground", meta: "RAG + tools sandbox",
           tags: ["Agentic AI", "RAG"], iconTop: ["llm", "rag", "mcp"], modalSubtitle: "Personal experiments with agent frameworks",
-          points: ["A space for prototyping agentic AI patterns, prompt strategies, and MCP tools.", "Repos coming to the GitHub row above."] },
-        { grad: "card-grad-2", badge: "WIP", title: "Automation Snippets", meta: "Reusable test utilities",
+          points: ["A space for prototyping agentic AI patterns, prompt strategies, and MCP tools.", "Repos coming to the GitHub row above."]
+        },
+        {
+          grad: "card-grad-2", badge: "WIP", title: "Automation Snippets", meta: "Reusable test utilities",
           tags: ["Selenium", "Java"], iconTop: ["selenium", "java", "git"], modalSubtitle: "Handy automation helpers",
-          points: ["Collection of reusable framework utilities and patterns.", "To be published on GitHub."] },
+          points: ["Collection of reusable framework utilities and patterns.", "To be published on GitHub."]
+        },
       ],
     },
   ],
 };
 
 /* =========================================================
-   PROFILE 3: VISITOR  (casual / sarcastic, hobbies, GoT)
+   PROFILE 3: VISITOR  (casual / personal / Netflix-style)
    ========================================================= */
 const VISITOR = {
   accent: "#7b4397",
@@ -339,66 +381,107 @@ const VISITOR = {
   hero: {
     eyebrow: "🍿 NOW PLAYING",
     title: "The Rajath Show",
-    subtitle: "Senior SDE • sports, gaming, travel & questionable photography",
+    subtitle: "Senior SDE by day, curious traveler and weekend storyteller by night",
     meta: [
-      { type: "badge", text: "Unscripted" },
+      { type: "badge", text: "Unfiltered" },
       { type: "text", text: "Bengaluru, India" },
-      { type: "green", text: "99% would hang out again" },
+      { type: "green", text: "Low-key fun, high-energy stories" },
     ],
     overview:
-      "Welcome to my corner of the internet. You came for a resume, but plot twist — this profile " +
-      "has snacks. Expect more talk about Game of Thrones theories and slightly-too-many vacation " +
-      "photos than enterprise software. The serious, suit-and-tie version is one profile over. " +
-      "You've been warned. Enjoy the show.",
+      "This is the more personal side of my profile. It is a mix of travel plans, on-field energy, " +
+      "camera roll chaos, and the kinds of things that make a week feel full. I like good company, " +
+      "late-night matches, quick getaways, and the kind of conversations that start with one random story " +
+      "and somehow turn into an hour of nostalgia.",
     actions: [
       { label: "▶ Skip Intro", cls: "btn-play", scrollTo: "row-binging" },
-      { label: "＋ The Boring Version", cls: "btn-info", href: LINKS.resume, download: true },
+      { label: "📸 A peek into my travel stories", cls: "btn-info", href: "https://www.instagram.com/", external: true },
+      { label: "＋ The Work Version", cls: "btn-info", href: LINKS.resume, download: true },
     ],
   },
   rows: [
     {
-      id: "binging", title: "Currently Binging", sub: "On repeat, no regrets", variant: "poster",
+      id: "binging", title: "My Current Vibe", sub: "A little movement, a little mischief", variant: "poster",
       cards: [
-        { image: "images/got.jpg", grad: "card-grad-got", emoji: "🐉", badge: "S1–S8", title: "Game of Thrones",
-          tags: ["Fantasy", "Re-watch #?"], modalSubtitle: "Winter came. I stayed.",
-          points: ["Watched it all. Twice. Maybe three times — who's counting?", "Will defend (most of) the ending in a debate you didn't ask for.", "House words around here: 'One more episode.'"] },
-        { grad: "card-grad-5", emoji: "🎮", badge: "CO-OP", title: "Game Night", variant: "poster",
-          tags: ["Gaming", "Late nights"], modalSubtitle: "Just one more match.",
-          points: ["Controller in hand, snacks within reach.", "Competitive enough to care, chill enough to lose gracefully... mostly."] },
-        { grad: "card-grad-2", emoji: "⚽", badge: "LIVE", title: "Sports O'Clock", variant: "poster",
-          tags: ["Sports", "Match day"], modalSubtitle: "Will watch, play, or argue about it.",
-          points: ["If there's a ball, a score, or a rivalry, I'm in.", "Equally happy playing or yelling at a screen."] },
+        {
+          image: "images/travel.jpg", grad: "card-grad-3", emoji: "🛣️", badge: "ROAD TRIP", title: "Travel Mode",
+          tags: ["Road trips", "Monsoon rides", "Weekend escapes"], modalSubtitle: "The plan is usually simple: go.",
+          points: ["I am happiest when the route is open and the destination is still a surprise.", "A good ride, a scenic stop, and a story to bring back home.", "Monsoon rides, long drives and random detours are all part of the fun."]
+        },
+        {
+          image: "images/sports.jpg", grad: "card-grad-2", emoji: "🏏", badge: "MATCHDAY", title: "Sport, Always",
+          tags: ["Cricket", "Football", "Basketball"], modalSubtitle: "If there is a match, I am there.",
+          points: ["RCB, Lakers, Messi and BFC all have a place in my matchday calendar.", "I am equally happy playing or yelling from the couch.", "The energy before a big game is too good to miss."]
+        },
+        {
+          image: "images/gaming.jpg", grad: "card-grad-5", emoji: "🎮", badge: "CO-OP", title: "Game Night",
+          tags: ["Gaming", "Late nights", "Snacks"], modalSubtitle: "One more round, then sleep.",
+          points: ["A good game session is a perfect reset button.", "I like games that are competitive but still easy to laugh about.", "A controller, a snack, and a low-stakes challenge is the formula."]
+        },
       ],
     },
     {
-      id: "hobbies", title: "Top Picks: My Hobbies", sub: "Because you clicked 'Visitor'", variant: "poster",
+      id: "hobbies", title: "My Favorite Things", sub: "The little things that keep life interesting", variant: "poster",
       cards: [
-        { image: "images/sports.jpg", grad: "card-grad-2", emoji: "🏏", badge: "TEAM PLAYER", title: "Sports",
-          tags: ["Cricket", "Football", "Anything"], modalSubtitle: "Cardio disguised as fun.",
-          points: ["Play it, watch it, overanalyze it.", "Great for teamwork talking points in interviews. Also just fun."] },
-        { image: "images/gaming.jpg", grad: "card-grad-5", emoji: "🎮", badge: "PRESS START", title: "Gaming",
-          tags: ["Console", "Strategy"], modalSubtitle: "Problem-solving with extra explosions.",
-          points: ["From strategy to shooters — I like a good challenge.", "Yes, debugging and boss fights are basically the same skill."] },
-        { image: "images/travel.jpg", grad: "card-grad-3", emoji: "✈️", badge: "WANDERLUST", title: "Travel",
-          tags: ["Roadtrips", "New places"], modalSubtitle: "Collecting places, not things.",
-          points: ["New city, new food, new wrong turn that becomes the best part.", "The map app and I have trust issues, and I love it."] },
-        { image: "images/photography.jpg", grad: "card-grad-6", emoji: "📷", badge: "SHOT ON RG", title: "Photography",
-          tags: ["Landscapes", "Candids"], modalSubtitle: "Making strangers wait while I 'get the shot'.",
-          points: ["Always the one who says 'wait, one more.'", "Travel + photography = a camera roll that needs its own hard drive."] },
+        {
+          image: "images/photography.jpeg", grad: "card-grad-6", emoji: "📷", badge: "FRAMES", title: "Photography",
+          tags: ["Travel shots", "Candids", "Sunsets"], modalSubtitle: "I will wait for the perfect frame.",
+          points: ["I am always the one saying one more photo, one more angle.", "The best moments are the ones that feel worth saving.", "Travel and photography together are a very dangerous combo."]
+        },
+        {
+          image: "images/OP.jpg", grad: "card-grad-got", emoji: "🐺", badge: "SERIES", title: "Comfort Shows",
+          tags: ["GoT", "One Piece", "Friends"], modalSubtitle: "My idea of a perfect evening",
+          points: ["Game of Thrones, One Piece, Friends, Brooklyn 99 and Sherlock all fit the vibe.", "A good show can turn a quiet evening into a full reset.", "I am very easy to please when there is a story and a snack."]
+        },
+        {
+          image: "images/got.jpg", grad: "card-grad-got", emoji: "🐉", badge: "FANDOM", title: "The Pop Culture Side",
+          tags: ["Fantasy", "Theories", "Rewatch"], modalSubtitle: "A little dramatic, a little obsessed",
+          points: ["I will absolutely defend a favorite ending or a questionable plot twist.", "There is a reason I keep coming back to rewatch some of these.", "The best stories are the ones that still feel fun the third time."]
+        },
+        {
+          logo: "images/rcb-logo.png", grad: "card-grad-2", emoji: "🏏", badge: "RCB", title: "Royal Challengers Bangalore",
+          tags: ["Cricket", "IPL", "Fandom"], modalSubtitle: "The heart of my matchday energy",
+          points: ["Fun fact: RCB is the team that turned every season into a full emotional rollercoaster.", "The loyalty is real, even when the script is not.", "Every big match feels like a little bit of drama and a little bit of hope."]
+        },
+        {
+          logo: "images/lakers-logo.jpg", grad: "card-grad-5", emoji: "🏀", badge: "LAKERS", title: "Los Angeles Lakers",
+          tags: ["Basketball", "LeBron", "Legacy"], modalSubtitle: "A franchise with a lot of history and a lot of drama",
+          points: ["Fun fact: the Lakers have one of the most iconic basketball identities in the world.", "Every era feels like a movie trailer with a scoreboard.", "I love the mix of talent, history and chaos."]
+        },
+        {
+          logo: "images/messi-logo.jpg", grad: "card-grad-3", emoji: "⚽", badge: "MESSI", title: "Lionel Messi",
+          tags: ["Football", "GOAT", "Storytelling"], modalSubtitle: "A player who makes football feel cinematic",
+          points: ["Fun fact: Messi has the rare ability to make even simple moments look effortless.", "He is the kind of player who turns football into a story rather than just a sport.", "Watching him feels less like a match and more like a masterclass."]
+        },
+        {
+          logo: "images/bfc-logo.png", grad: "card-grad-4", emoji: "⚽", badge: "BFC", title: "Bengaluru FC",
+          tags: ["Football", "Local pride", "Indian football"], modalSubtitle: "A club that brings the city together",
+          points: ["Fun fact: Bengaluru FC has a strong identity and a loyal fan culture that feels personal.", "It is the kind of club that makes football feel close to home.", "The energy around matches feels proud, local and a little intense."]
+        },
       ],
     },
     {
-      id: "facts", title: "Trailers & Fun Facts", sub: "No spoilers",
+      id: "facts", title: "Quick Bits & Fun Facts", sub: "A handful of details that make me, me",
       cards: [
-        { grad: "card-grad-1", emoji: "⏳", badge: "PLOT", title: "Nearly a Decade In", meta: "Started Sept 2016",
-          tags: ["Origin story"], modalSubtitle: "The 'experience' montage",
-          points: ["Been in IT since 2016 — that's nearly 10 years of plot development.", "Started as a developer, leveled up into automation, performance, and AI."] },
-        { grad: "card-grad-got", emoji: "🐺", badge: "FANDOM", title: "GoT Certified", meta: "Westeros resident",
-          tags: ["Dragons", "Debates"], modalSubtitle: "House motto: one more episode",
-          points: ["Strong opinions about dragons, thrones, and who should've won.", "Will absolutely theorize with you."] },
-        { grad: "card-grad-4", emoji: "🤖", badge: "BONUS", title: "The Day Job (skip if bored)", meta: "SDET + AI",
-          tags: ["AI", "Automation"], modalSubtitle: "Okay, a little tech talk",
-          points: ["By day: I build AI-powered testing and automation for enterprise software.", "Curious about the real details? Switch to the Recruiter or Engineer profile.", "That's enough work talk for the fun page."] },
+        {
+          grad: "card-grad-1", emoji: "⏳", badge: "ORIGIN", title: "Nearly 10 Years In", meta: "Since Sept 2016",
+          tags: ["IT", "Experience"], modalSubtitle: "A long and slightly chaotic journey",
+          points: ["Started in IT back in 2016 and have grown through development, automation and AI.", "The path has been more varied than planned and honestly more fun because of it.", "I still keep a little room for life outside the laptop."]
+        },
+        {
+          grad: "card-grad-2", emoji: "🏏", badge: "RCB", title: "Matchday Energy", meta: "Cricket and emotion",
+          tags: ["RCB", "Cricket"], modalSubtitle: "The highs, the heartbreaks, the hope",
+          points: ["RCB has been a big part of my life for years.", "The matchday feeling never really gets old.", "I will happily talk through a game with anyone who will listen."]
+        },
+        {
+          grad: "card-grad-3", emoji: "✈️", badge: "TRAVEL", title: "A Few Favorite Places", meta: "Mountains and beaches",
+          tags: ["Himalayas", "Beaches", "Road trips"], modalSubtitle: "Some places stay with you",
+          points: ["Mountains in the Himalayas and sunsets by the beach both mean a lot to me.", "A trip is rarely about the place alone; it is about the memory attached to it.", "I am always collecting the next favorite view."]
+        },
+        {
+          grad: "card-grad-5", emoji: "📸", badge: "CAMERA", title: "The Camera Roll Problem", meta: "Too many photos, never enough space",
+          tags: ["Photography", "Memories"], modalSubtitle: "A little overprepared, honestly",
+          points: ["I tend to take one more photo than I need.", "The camera roll keeps growing faster than I can organize it.", "Some of my best memories are just random frames from a trip."]
+        },
       ],
     },
   ],
@@ -726,8 +809,51 @@ function initChrome() {
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 }
 
+/* ---------- Intro splash ---------- */
+function playIntroSplash() {
+  const overlay = $("#intro-overlay");
+  const flash = $("#intro-flash");
+  if (!overlay) return;
+  document.body.classList.add("intro-active");
+  overlay.classList.remove("hidden");
+
+  if (flash) {
+    flash.classList.remove("active");
+    void flash.offsetWidth;
+    flash.classList.add("active");
+  }
+
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  if (AudioContext) {
+    try {
+      const ctx = new AudioContext();
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(540, now);
+      osc.frequency.exponentialRampToValueAtTime(860, now + 0.06);
+      gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(0.035, now + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.18);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.2);
+      setTimeout(() => ctx.close(), 250);
+    } catch (e) { }
+  }
+
+  setTimeout(() => {
+    overlay.classList.add("hide");
+    document.body.classList.remove("intro-active");
+    setTimeout(() => overlay.classList.add("hidden"), 800);
+  }, 1400);
+}
+
 /* ---------- Init ---------- */
 document.addEventListener("DOMContentLoaded", () => {
+  playIntroSplash();
   initProfileGate();
   initChrome();
 });

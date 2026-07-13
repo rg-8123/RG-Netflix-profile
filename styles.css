@@ -20,8 +20,90 @@ body {
   color: var(--text);
   overflow-x: hidden;
 }
+body.intro-active { overflow: hidden; }
 .hidden { display: none !important; }
 a { color: inherit; text-decoration: none; }
+
+/* ===================== INTRO SPLASH ===================== */
+.intro-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle at center, #240909 0%, #0a0a0a 55%, #000 100%);
+  opacity: 1; pointer-events: none; transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.intro-overlay.hide {
+  opacity: 0;
+  transform: scale(1.04);
+}
+.intro-flash {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.3) 24%, rgba(255,255,255,0) 58%);
+  opacity: 0;
+  transform: scale(0.7);
+  animation: introFlash 0.9s ease-out 0.08s both;
+}
+.intro-logo {
+  width: min(38vw, 320px);
+  aspect-ratio: 1;
+  display: grid; place-items: center;
+  border-radius: 32px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  animation: tudumPulse 1.2s cubic-bezier(.2,.8,.2,1) both;
+  position: relative;
+  overflow: visible;
+}
+.intro-logo::before {
+  content: "";
+  position: absolute; inset: -4%;
+  background: radial-gradient(circle, rgba(229,9,20,0.08) 0%, rgba(229,9,20,0.02) 46%, rgba(229,9,20,0) 74%);
+  z-index: 0;
+  transform: scale(1.02);
+  animation: glowPulse 1.15s ease-out both;
+}
+.intro-logo-mark {
+  width: 100%; height: 100%;
+  display: block;
+  position: relative; z-index: 1;
+  filter: drop-shadow(0 0 8px rgba(229,9,20,0.22));
+  animation: letterReveal 1.05s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes tudumPulse {
+  0% {
+    transform: scale(0.16) rotate(-4deg);
+    opacity: 0;
+  }
+  45% {
+    transform: scale(1.03) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes glowPulse {
+  0% { opacity: 0; transform: scale(0.86); }
+  45% { opacity: 0.45; transform: scale(1.03); }
+  100% { opacity: 0.2; transform: scale(1.08); }
+}
+@keyframes introFlash {
+  0% { opacity: 0; transform: scale(0.7); }
+  35% { opacity: 0.65; transform: scale(1.02); }
+  100% { opacity: 0; transform: scale(1.2); }
+}
+@keyframes flashSweep {
+  0% { transform: translateX(-120%) rotate(16deg); }
+  100% { transform: translateX(140%) rotate(16deg); }
+}
+@keyframes letterReveal {
+  0% { opacity: 0; transform: translateY(18px) scale(0.94); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes ringReveal {
+  0% { opacity: 0; transform: scale(0.7); }
+  100% { opacity: 1; transform: scale(0.98); }
+}
 
 /* ===================== PROFILE GATE ===================== */
 .profile-gate {

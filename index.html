@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rajath Gowda — Interactive Resume</title>
-  <meta name="description" content="Netflix-style interactive resume of Rajath Gowda — choose a profile: Recruiter, Engineer, or Visitor." />
+  <meta name="description"
+    content="Netflix-style interactive resume of Rajath Gowda — choose a profile: Recruiter, Engineer, or Visitor." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <!-- Tech / tool icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <div class="intro-overlay" id="intro-overlay" aria-hidden="true">
+    <div class="intro-flash" id="intro-flash"></div>
+    <div class="intro-logo" aria-hidden="true">
+      <img class="intro-logo-mark" src="images/r.png" alt="R logo" />
+    </div>
+  </div>
+
   <!-- ===== PROFILE SELECT (Who's watching?) ===== -->
   <section id="profile-gate" class="profile-gate">
     <div class="profile-inner">
@@ -92,4 +103,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>
