@@ -151,10 +151,13 @@ a { color: inherit; text-decoration: none; }
 }
 .nav.scrolled { background: #141414; box-shadow: 0 2px 12px rgba(0,0,0,0.6); }
 .nav-left { display: flex; align-items: center; gap: 32px; }
-.logo {
-  font-family: "Bebas Neue", sans-serif; color: var(--accent);
-  font-size: 2rem; letter-spacing: 1px; line-height: 1;
+.logo-home {
+  background: none; border: none; cursor: pointer; padding: 4px 6px;
+  display: flex; align-items: center; border-radius: 6px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  opacity: 0.9;
 }
+.logo-home:hover { background: rgba(255,255,255,0.1); transform: translateY(-1px); opacity: 1; }
 .nav-links { display: flex; gap: 20px; }
 .nav-links a { color: var(--muted); font-size: 0.9rem; transition: color 0.2s ease; }
 .nav-links a:hover { color: #fff; }
@@ -179,9 +182,34 @@ a { color: inherit; text-decoration: none; }
 .nav-switch:hover { background: rgba(255,255,255,0.18); }
 .nav-switch .mini-avatar {
   width: 26px; height: 26px; border-radius: 4px; display: flex;
-  align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;
-  background: var(--accent);
+  align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700;
+  background: var(--accent); white-space: nowrap; overflow: hidden;
 }
+
+/* Profile dropdown */
+.profile-dropdown {
+  position: absolute; top: calc(var(--nav-h) + 4px); right: 4%;
+  background: #1c1c1c; border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px; overflow: hidden; z-index: 100;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+  animation: fade 0.18s ease;
+  min-width: 180px;
+}
+.profile-dropdown-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 16px; cursor: pointer; transition: background 0.15s ease;
+  font-size: 0.9rem; color: #e0e0e0;
+}
+.profile-dropdown-item:hover { background: rgba(255,255,255,0.1); }
+.profile-dropdown-item.active { background: rgba(229,9,20,0.15); color: #fff; }
+.pd-avatar {
+  width: 30px; height: 30px; border-radius: 5px; display: flex;
+  align-items: center; justify-content: center; font-size: 0.65rem;
+  font-weight: 700; flex-shrink: 0; white-space: nowrap;
+}
+.pd-av-1 { background: var(--accent); color: #fff; }
+.pd-av-2 { background: #1f8ef1; color: #fff; }
+.pd-av-4 { background: #7b4397; color: #fff; font-size: 1rem; }
 
 /* ===================== HERO ===================== */
 .hero {

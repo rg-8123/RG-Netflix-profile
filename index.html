@@ -51,10 +51,29 @@
     <!-- NAV -->
     <header class="nav" id="nav">
       <div class="nav-left">
-        <a href="#top" class="logo">RAJATH</a>
+        <button class="logo-home" id="logo-home" aria-label="Go to profile selection" title="Switch Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          </svg>
+        </button>
         <nav class="nav-links" id="nav-links"></nav>
       </div>
       <div class="nav-right" id="nav-right"></div>
+      <!-- Profile dropdown -->
+      <div class="profile-dropdown hidden" id="profile-dropdown">
+        <div class="profile-dropdown-item" data-switch="recruiter">
+          <span class="pd-avatar pd-av-1">RG</span>
+          <span>Recruiter</span>
+        </div>
+        <div class="profile-dropdown-item" data-switch="engineer">
+          <span class="pd-avatar pd-av-2">&lt;/&gt;</span>
+          <span>Engineer</span>
+        </div>
+        <div class="profile-dropdown-item" data-switch="visitor">
+          <span class="pd-avatar pd-av-4">&#127871;</span>
+          <span>Visitor</span>
+        </div>
+      </div>
     </header>
 
     <span id="top"></span>

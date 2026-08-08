@@ -309,103 +309,112 @@ const ENGINEER = {
   },
   rows: [
     {
-      id: "projects", title: "Featured Projects", sub: "Deep dives",
+      id: "projects", title: "Enterprise Projects", sub: "Work delivered at scale",
       cards: [
         {
-          grad: "card-grad-1", badge: "AI · FLAGSHIP", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
+          grad: "card-grad-1", badge: "AI - FLAGSHIP", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog - approx. 80% accuracy",
           tags: ["LangChain", "RAG", "Data Governance"], icons: ["langchain", "llm", "rag", "mcp", "python"], iconTop: ["langchain", "llm", "rag"],
           modalSubtitle: "Custom AI data-identification engine for enterprise customers",
           points: [
-            "Built an LLM-backed classification layer (LangChain + RAG + prompt engineering) integrated directly into Pentaho Data Catalog.",
-            "Achieved ~80% detection accuracy vs the standard non-LLM PDC solution while automatically tagging sensitive customer data with PII classifications.",
-            "Stack: LangChain, LLMs (GPT/Claude/Gemini), RAG pipelines, MCP for tool access, Java/Python services.",
+            "Built an LLM-powered classification layer using LangChain, RAG, and prompt engineering, integrated directly into Pentaho Data Catalog.",
+            "Achieved approximately 80% detection accuracy compared to PDC's standard non-LLM classifier, automatically tagging sensitive customer data with PII labels.",
+            "Tech stack: LangChain, GPT/Claude/Gemini, RAG pipelines, MCP for tool access, Java and Python services.",
           ]
         },
         {
-          grad: "card-grad-4", badge: "AI AGENTS", title: "AI Chatbot — Pentaho Docs & QA", meta: "LangChain · RAG · PractiTest Integration",
+          grad: "card-grad-4", badge: "AI CHATBOT", title: "AI Chatbot - Pentaho Docs and QA", meta: "LangChain - RAG - PractiTest",
           tags: ["LangChain", "RAG", "Chatbot", "LLMs"], icons: ["langchain", "llm", "rag", "langsmith"], iconTop: ["langchain", "llm", "rag"],
           modalSubtitle: "Customer-facing AI chatbot for autonomous product support",
           points: [
-            "Engineered and deployed a customer-facing AI chatbot to autonomously resolve client inquiries about Pentaho application usage.",
-            "Used LangChain to index and retrieve rich context from official Pentaho documentation and thousands of proprietary PractiTest QA test cases.",
-            "Built a RAG pipeline over heterogeneous document sources — docs, tickets, test cases — to give the chatbot accurate, context-grounded answers.",
-            "Integrated LangSmith for LLM evaluation, tracing, and quality monitoring in production.",
+            "Built and deployed a customer-facing AI chatbot that resolves client questions about Pentaho product usage without manual intervention.",
+            "Used LangChain to index and retrieve context from official Pentaho documentation and thousands of PractiTest QA test cases.",
+            "Built a RAG pipeline over multiple document sources including docs, tickets, and test cases to deliver accurate, grounded answers.",
+            "Integrated LangSmith for LLM evaluation, trace logging, and quality monitoring in production.",
           ]
         },
         {
-          grad: "card-grad-5", badge: "PERSONAL AI", title: "Legal Documents Agent", meta: "Python · LangChain · ChromaDB · Ollama",
-          tags: ["Agentic AI", "RAG", "ChromaDB", "Ollama"], icons: ["langchain", "chromadb", "ollama", "python"], iconTop: ["langchain", "chromadb", "ollama"],
-          modalSubtitle: "Private local AI agent for analyzing sensitive legal records",
-          points: [
-            "Engineered a private, local AI agent using Python, LangChain, and ChromaDB to analyze sensitive legal records through a RAG-based framework.",
-            "Integrated Local Ollama for on-premise model inference — zero data exposure to external LLM providers.",
-            "Built a Claude Code-driven agentic workflow to autonomously extract and query contractual terms, clauses, and obligations.",
-            "Designed with rigorous data confidentiality: all inference runs locally on the machine with no cloud dependencies.",
-          ]
-        },
-        {
-          grad: "card-grad-2", badge: "PERSONAL AI", title: "Mutual Fund & Market Analyzer", meta: "Spring Boot · Spring AI · Java",
-          tags: ["Spring AI", "Java", "Spring Boot", "LLMs"], icons: ["springai", "springboot", "java", "llm"], iconTop: ["springai", "springboot", "java"],
-          modalSubtitle: "Full-stack financial analytics platform with AI-driven insights",
-          points: [
-            "Architected a full-stack financial analytics platform utilizing a Java and Spring Boot backend.",
-            "Engineered custom Java-based data sanitization pipelines to strictly strip PII before routing portfolio data to Spring AI.",
-            "Spring AI dynamically analyzes market trends and sector overlaps to generate comprehensive investment strategy reports.",
-            "Served reports to a custom HTML/JavaScript frontend UI with real-time data visualization.",
-          ]
-        },
-        {
-          grad: "card-grad-3", badge: "PERSONAL AI", title: "Predictive Engines — Poker & Market", meta: "Python · Pandas · ML · Live Data",
-          tags: ["Python", "Pandas", "ML", "Live Data"], icons: ["python", "llm"], iconTop: ["python"],
-          modalSubtitle: "Real-time odds calculator & stock price forecasting engine",
-          points: [
-            "Built a real-time poker winning-odds calculator using Python and algorithmic probability modeling.",
-            "Engineered a stock price tracking engine using Python and Pandas that ingests live market data.",
-            "Identifies historical patterns and industry indicators to forecast market movements through statistical modeling.",
-            "Applied machine learning principles for predictive accuracy on time-series financial data.",
-          ]
-        },
-        {
-          grad: "card-grad-6", badge: "AGENTIC AI", title: "Agentic AI + MCP Integration", meta: "Context-aware AI services",
+          grad: "card-grad-6", badge: "AGENTIC AI", title: "Agentic AI and MCP Integration", meta: "LangGraph - MCP - Context-aware services",
           tags: ["Agentic AI", "MCP", "LangGraph", "Prompt Eng"], icons: ["mcp", "langgraph", "llm", "langchain"], iconTop: ["mcp", "langgraph", "llm"],
           modalSubtitle: "Connecting LLMs to internal product tooling via MCP",
           points: [
-            "Designed agentic workflows using LangGraph for multi-step reasoning that detect, classify, and govern data with minimal human steering.",
-            "Integrated Model Context Protocol (MCP) so LLMs can safely call internal product tools and retrieve live context.",
-            "Packaged reusable AI services consumed across multiple product use cases.",
+            "Designed multi-step agentic workflows using LangGraph that detect, classify, and govern data with minimal manual involvement.",
+            "Integrated Model Context Protocol (MCP) to allow LLMs to securely call internal product tools and fetch live context.",
+            "Packaged these as reusable AI services that are consumed across multiple product features.",
           ]
         },
         {
-          grad: "card-grad-2", badge: "AUTOMATION", title: "End-to-End Test Automation", meta: "API + UI frameworks",
+          grad: "card-grad-2", badge: "AUTOMATION", title: "End-to-End Test Automation", meta: "API and UI frameworks",
           tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman", "newman"], iconTop: ["selenium", "cucumber", "postman"],
-          modalSubtitle: "Framework architecture for coverage & speed",
+          modalSubtitle: "Automation framework covering API and UI layers",
           points: [
-            "Architected reusable automation frameworks for both API and GUI layers.",
-            "REST Assured + Postman + Newman for API verification; Selenium + Cucumber BDD for UI flows.",
-            "Cut regression risk and sped up releases; accelerated test authoring with AI/Copilot.",
-            "Cut a 2-day manual regression cycle to ~2 hours of automated execution with 100% regression coverage.",
+            "Designed and built reusable automation frameworks covering both API and UI test layers.",
+            "Used REST Assured, Postman, and Newman for API testing; Selenium and Cucumber BDD for UI test flows.",
+            "Reduced a two-day manual regression cycle to approximately two hours of automated execution with 100% regression coverage.",
+            "Accelerated test authoring by integrating AI tools and GitHub Copilot into the development workflow.",
           ]
         },
         {
-          grad: "card-grad-5", badge: "PERFORMANCE", title: "Observability & Perf Tuning", meta: "Live monitoring + optimization",
+          grad: "card-grad-5", badge: "PERFORMANCE", title: "Observability and Performance Tuning", meta: "Live monitoring and optimization",
           tags: ["Grafana", "Prometheus", "OpenTelemetry"], icons: ["grafana", "prometheus", "otel", "loki", "jmeter", "datadog"], iconTop: ["grafana", "prometheus", "loki"],
-          modalSubtitle: "Performance engineering & production reliability",
+          modalSubtitle: "Performance engineering and production reliability",
           points: [
-            "Profiled throughput, latency, and resource usage to hit enterprise scalability targets.",
-            "Stood up Grafana + Prometheus + OpenObserve + Loki + OpenTelemetry for full visibility.",
-            "Used the stack to identify Java performance bottlenecks, memory leak issues, and caching problems.",
+            "Profiled throughput, latency, and resource consumption to meet enterprise scalability targets.",
+            "Set up a full observability stack using Grafana, Prometheus, OpenObserve, Loki, and OpenTelemetry.",
+            "Used the observability data to identify Java performance bottlenecks, memory leaks, and caching issues, leading to targeted fixes.",
           ]
         },
         {
-          grad: "card-grad-6", badge: "PLATFORM", title: "Data Migration Platform", meta: "Pentaho · Java + PDI/PDC",
+          grad: "card-grad-6", badge: "PLATFORM", title: "Data Migration Platform", meta: "Pentaho - Java - PDI and PDC",
           tags: ["Java", "Pentaho", "Data Migration"], icons: ["java", "springboot", "oracle"], iconTop: ["java", "springboot"],
-          modalSubtitle: "Led a cross-functional team to build a data migration platform for heterogeneous systems",
-          points: ["Led a team of 5 to 8 engineers to design and build DataPipes for source-to-target migrations across heterogeneous systems.", "Developed custom Java modules to extend Pentaho Data Integration and Data Catalog with masking and encryption capabilities.", "Supported a modular pipeline pattern that avoided pipeline-specific rework and kept delivery timelines on track."]
+          modalSubtitle: "Cross-functional team project to build a data migration platform",
+          points: [
+            "Led a team of 5 to 8 engineers to design and build DataPipes, a Java-based platform for migrating data between heterogeneous source and target systems.",
+            "Built custom Java modules that extended Pentaho Data Integration and Data Catalog with masking and encryption to protect sensitive data during transfers.",
+            "Designed a modular pipeline architecture that supported multiple data types without requiring system-specific rework.",
+          ]
         },
       ],
     },
     {
-      id: "github", title: "GitHub Projects", sub: "Live repos — more coming soon",
+      id: "personal", title: "Personal Projects", sub: "Self-built AI projects",
+      cards: [
+        {
+          grad: "card-grad-5", badge: "PERSONAL AI", title: "Legal Documents Agent", meta: "Python - LangChain - ChromaDB - Ollama",
+          tags: ["Agentic AI", "RAG", "ChromaDB", "Ollama"], icons: ["langchain", "chromadb", "ollama", "python"], iconTop: ["langchain", "chromadb", "ollama"],
+          modalSubtitle: "Private local AI agent for analyzing sensitive legal documents",
+          points: [
+            "Built a fully local AI agent using Python, LangChain, and ChromaDB to analyze sensitive legal records through a RAG-based pipeline.",
+            "Integrated Ollama for on-device model inference so no data is sent to external LLM providers, ensuring full privacy.",
+            "Built an agentic workflow that autonomously extracts and answers questions about contract terms, clauses, and obligations.",
+            "All processing runs locally on the machine with no cloud dependencies, maintaining strict data confidentiality.",
+          ]
+        },
+        {
+          grad: "card-grad-2", badge: "PERSONAL AI", title: "Mutual Fund and Market Analyzer", meta: "Spring Boot - Spring AI - Java",
+          tags: ["Spring AI", "Java", "Spring Boot", "LLMs"], icons: ["springai", "springboot", "java", "llm"], iconTop: ["springai", "springboot", "java"],
+          modalSubtitle: "Full-stack financial analytics platform with AI-driven insights",
+          points: [
+            "Built a full-stack financial analytics platform using Java and Spring Boot on the backend.",
+            "Wrote custom Java data sanitization pipelines to remove PII from portfolio data before passing it to Spring AI.",
+            "Spring AI analyzes market trends and sector overlaps and generates structured investment strategy reports.",
+            "Reports are displayed on a custom HTML and JavaScript frontend with data visualization.",
+          ]
+        },
+        {
+          grad: "card-grad-3", badge: "PERSONAL AI", title: "Predictive Engines - Poker and Market", meta: "Python - Pandas - Machine Learning - Live Data",
+          tags: ["Python", "Pandas", "ML", "Live Data"], icons: ["python", "llm"], iconTop: ["python"],
+          modalSubtitle: "Real-time probability calculator and stock price forecasting engine",
+          points: [
+            "Built a real-time poker winning-odds calculator in Python using algorithmic probability modeling.",
+            "Built a stock price tracking engine that ingests live market data using Python and Pandas.",
+            "The engine identifies historical patterns and indicators to forecast market movements using statistical modeling.",
+            "Applied machine learning techniques to improve predictive accuracy on time-series financial data.",
+          ]
+        },
+      ],
+    },
+    {
+      id: "github", title: "GitHub Projects", sub: "Live repos - more coming soon",
       isGithub: true,
     },
     {
@@ -641,10 +650,18 @@ function renderNav(profile, key) {
     gh.innerHTML = '<i class="devicon-github-original"></i>'; right.appendChild(gh);
   }
 
+  // Profile switcher - opens dropdown
+  const avatarText = key === "engineer" ? "</>": PROFILE_AVATAR[key];
   const switcher = create("button", "nav-switch");
-  switcher.innerHTML = `<span class="mini-avatar">${PROFILE_AVATAR[key]}</span><span>${PROFILE_LABEL[key]} ▾</span>`;
-  switcher.addEventListener("click", showGate);
+  switcher.id = "nav-switcher";
+  switcher.innerHTML = `<span class="mini-avatar">${avatarText}</span><span>${PROFILE_LABEL[key]} &#9662;</span>`;
+  switcher.addEventListener("click", (e) => { e.stopPropagation(); toggleDropdown(key); });
   right.appendChild(switcher);
+
+  // Mark active item in dropdown
+  document.querySelectorAll(".profile-dropdown-item").forEach((item) => {
+    item.classList.toggle("active", item.dataset.switch === key);
+  });
 }
 
 /* ---------- Rows ---------- */
@@ -850,13 +867,46 @@ function renderFooter() {
   });
 }
 
+/* ---------- Dropdown toggle ---------- */
+function toggleDropdown(currentKey) {
+  const dd = $("#profile-dropdown");
+  dd.classList.toggle("hidden");
+}
+
+function closeDropdown() {
+  const dd = $("#profile-dropdown");
+  if (dd) dd.classList.add("hidden");
+}
+
 /* ---------- Misc wiring ---------- */
 function initChrome() {
   const nav = $("#nav");
   window.addEventListener("scroll", () => nav.classList.toggle("scrolled", window.scrollY > 40));
   $("#modal-close").addEventListener("click", closeModal);
   $("#modal-overlay").addEventListener("click", (e) => { if (e.target.id === "modal-overlay") closeModal(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") { closeModal(); closeDropdown(); } });
+
+  // Home button -> profile gate
+  $("#logo-home").addEventListener("click", () => { closeDropdown(); showGate(); });
+
+  // Dropdown profile switch items
+  document.querySelectorAll(".profile-dropdown-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      const key = item.dataset.switch;
+      closeDropdown();
+      if (key !== CURRENT) selectProfile(key);
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    const dd = $("#profile-dropdown");
+    const switcher = $("#nav-switcher");
+    if (dd && !dd.classList.contains("hidden") &&
+        !dd.contains(e.target) && e.target !== switcher && !switcher.contains(e.target)) {
+      closeDropdown();
+    }
+  });
 }
 
 /* ---------- Intro splash ---------- */
