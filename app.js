@@ -14,7 +14,7 @@ const LINKS = {
   github: "https://github.com/",            // your GitHub profile
   email: "mailto:rajathg64@gmail.com",
   phone: "tel:+918123200196",
-  resume: "RajathGowda-SDE.pdf",
+  resume: "RajathGowda-AI-Engineer.pdf",
 };
 
 /* ---------- GitHub repos for the Engineer page (add later) ---------- */
@@ -75,6 +75,15 @@ const TECH = {
   datadog: { emoji: "📈", name: "Datadog" },
   newman: { emoji: "🧪", name: "Newman" },
   robocorp: { emoji: "🤖", name: "Robocorp" },
+  // AI & new tool logos (local image files)
+  langchain: { img: "images/langchain-logo.svg", name: "LangChain" },
+  langgraph: { img: "images/langgraph-logo.svg", name: "LangGraph" },
+  springai: { img: "images/springai-logo.svg", name: "Spring AI" },
+  chromadb: { img: "images/chromadb-logo.png", name: "ChromaDB" },
+  n8n: { img: "images/n8n-logo.svg", name: "n8n" },
+  langsmith: { img: "images/langsmith-logo.svg", name: "LangSmith" },
+  ollama: { img: "images/ollama-logo.svg", name: "Ollama" },
+  aws: { icon: "devicon-amazonwebservices-plain-wordmark colored", name: "AWS" },
 };
 
 /* =========================================================
@@ -86,17 +95,19 @@ const RECRUITER = {
   hero: {
     eyebrow: "★ TOP PICK FOR YOUR TEAM",
     title: "Rajath Gowda",
-    subtitle: "Senior Software Development Engineer",
+    subtitle: "Software Development & AI Engineer",
     meta: [
-      { type: "badge", text: "Nearly a decade in IT" },
+      { type: "badge", text: "10 Years of Experience" },
       { type: "text", text: "Bengaluru, India" },
       { type: "green", text: "96% Match" },
     ],
     overview:
-      "Senior Software Development Engineer with nearly a decade of experience architecting and delivering " +
-      "reliable software, automation frameworks, performance engineering solutions, and recent AI-powered " +
-      "platforms across the full product lifecycle. Built solutions that improved release quality, reduced " +
-      "manual effort, and solved real business problems in Agile environments.",
+      "Software Development and AI Engineer with a decade of experience designing scalable enterprise software, " +
+      "integrating LLM-powered applications, and solving complex client challenges in Agile environments. " +
+      "Specialized in building advanced AI frameworks, Agentic RAG, and multi-agent orchestration using Python, " +
+      "LangChain, LangGraph & Spring AI. Proven track record of leading cross-functional teams to build " +
+      "automated, reliable data platforms and recognized across every role for improving infrastructure " +
+      "reliability, cloud costs, and deployment speed.",
     actions: [
       { label: "▶ Play Resume", cls: "btn-play", href: LINKS.resume, download: true },
       { label: "ⓘ More Info", cls: "btn-info", modalRef: ["experience", 0] },
@@ -109,19 +120,20 @@ const RECRUITER = {
         {
           grad: "card-grad-1", badge: "NOW STREAMING", title: "Hitachi Vantara Ltd.",
           logo: "images/hitachi.png", brand: { bg: "linear-gradient(135deg,#e60027,#7a0015)", fg: "#ffffff", text: "HITACHI VANTARA" },
-          meta: "Senior Software Development Engineer",
+          meta: "Software Engineering Specialist — AI & Data",
           metaTime: "Sept 2020 – Present",
-          tags: ["AI/LLMs", "Automation", "Performance Eng"],
-          icons: ["llm", "rag", "mcp", "selenium", "restassured", "grafana", "docker"],
-          modalSubtitle: "Senior Software Development Engineer · Bengaluru · Pentaho / Hitachi Vantara",
+          tags: ["Agentic AI", "LLMs", "RAG", "Automation", "Performance Eng"],
+          icons: ["langchain", "langgraph", "llm", "rag", "mcp", "springai", "selenium", "grafana", "docker"],
+          modalSubtitle: "Software Engineering Specialist (AI & Data) · Bengaluru · Pentaho / Hitachi Vantara",
           points: [
-            "Designed and built custom, AI-powered data identification tools for enterprise customers that automatically tag sensitive customer data with PII classifications using LLMs integrated with Pentaho Data Catalog (PDC) to achieve ~80% detection accuracy relative to PDC's standard, non-LLM approach.",
-            "Led cross-functional engineering teams to design and build custom software solutions for Pentaho customers.",
-            "Architected and maintained end-to-end test automation frameworks, automating REST API testing with REST Assured and Postman and authoring BDD suites with Selenium and Cucumber for GUI automation, to maximize coverage and minimize regression risk.",
-            "Built an observability stack with Grafana, Prometheus, OpenObserve, Loki, and OpenTelemetry to monitor live application data, logs, metrics, and system performance, enabling proactive issue detection and resolution.",
-            "Operated within the Production Engineering team to triage and resolve customer-reported issues on a sprint basis in an Agile environment.",
-            "Built agentic AI workflows leveraging RAG and prompt engineering to detect, classify, and govern PII across large enterprise datasets.",
-            "Integrated Model Context Protocol (MCP) to connect LLMs with internal product tooling for reusable, context-aware AI services.",
+            "Designed and delivered custom, AI-powered data identification solutions for enterprise customers that automatically tag sensitive customer data with PII classifications using LLMs integrated with Pentaho Data Catalog (PDC), achieving ~80% detection accuracy relative to PDC's standard (non-LLM) solution.",
+            "Engineered and deployed a customer-facing AI chatbot to autonomously resolve client inquiries regarding application usage, utilizing LangChain to index and retrieve rich context from official Pentaho documentation and thousands of proprietary PractiTest QA test cases.",
+            "Led a team of 5 to 8 engineers to design and build DataPipes, a Java-based platform that migrated data between heterogeneous source and target systems using Pentaho Data Integration (PDI) and Pentaho Data Catalog (PDC).",
+            "Designed and developed custom Java modules packaged as executable JAR files that extended PDI and PDC with masking and encryption functions to protect sensitive data during cross-system transfers.",
+            "Architected a modular pipeline design that supported multiple source and target data types without requiring pipeline-specific rework, and owned technical decisions, code reviews, and delivery timelines across the project lifecycle.",
+            "Built an observability stack (Grafana, Prometheus, OpenObserve, Loki, OpenTelemetry) across both products for real-time metrics, logs, and performance monitoring. Used the stack to identify multiple performance bottlenecks and memory leak scenarios and drove improvements to the application's caching mechanism.",
+            "Built an API automation suite (Postman, Newman CLI) covering hundreds of test cases across PDC's core features, applying pairwise test case design to maximize coverage while minimizing test count and maintenance overhead. Cut a 2-day manual regression cycle to ~2 hours of automated execution.",
+            "Built smoke test GUI automation using the Robocorp framework for PDC and designed BDD-based UI test suites (Selenium, Cucumber) for the PDI web application, covering key user workflows end to end.",
           ],
         },
         {
@@ -165,7 +177,7 @@ const RECRUITER = {
           grad: "card-grad-1", badge: "DATA PLATFORM", title: "Data Migration Platform", meta: "Pentaho (PDC) · Java + PDI/PDC",
           tags: ["Java", "Pentaho", "Data Migration"], icons: ["java", "springboot", "oracle"], iconTop: ["java", "springboot"],
           modalSubtitle: "Led a cross-functional team to build a data migration platform for heterogeneous systems",
-          points: ["Led a team of 4 to 6 engineers to design and build DataPipes, a Java-based platform that migrated data between heterogeneous source and target systems using Pentaho Data Integration (PDI) and Pentaho Data Catalog (PDC).", "Designed and developed custom Java modules packaged as executable JAR files that extended PDI and PDC with masking and encryption functions to protect sensitive data during cross-system transfers.", "Architected a modular pipeline design that supported multiple source and target data types without requiring pipeline-specific rework."]
+          points: ["Led a team of 5 to 8 engineers to design and build DataPipes, a Java-based platform that migrated data between heterogeneous source and target systems using Pentaho Data Integration (PDI) and Pentaho Data Catalog (PDC).", "Designed and developed custom Java modules packaged as executable JAR files that extended PDI and PDC with masking and encryption capabilities to protect sensitive data during cross-system transfers.", "Architected a modular pipeline design that supported multiple source and target data types without requiring pipeline-specific rework."]
         },
         {
           grad: "card-grad-2", badge: "PAYMENTS", title: "Wireless Card Payment Integration", meta: "Decathlon Sports India · Spring Boot + REST APIs",
@@ -175,9 +187,19 @@ const RECRUITER = {
         },
         {
           grad: "card-grad-3", badge: "AI ENGINEERING", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
-          tags: ["LLMs", "RAG", "PII"], icons: ["llm", "rag", "mcp"], iconTop: ["llm", "rag"],
+          tags: ["LLMs", "RAG", "PII"], icons: ["langchain", "llm", "rag", "mcp"], iconTop: ["langchain", "llm", "rag"],
           modalSubtitle: "Architected an LLM-based PII detection system layered on Pentaho Data Catalog",
-          points: ["Architected an LLM-based PII detection system layered on Pentaho Data Catalog (PDC) and improved detection accuracy by ~80% over PDC's native, non-LLM classifier.", "Used RAG-based retrieval pipelines and prompt engineering to identify and classify sensitive data across large enterprise datasets."]
+          points: ["Architected an LLM-based PII detection system layered on Pentaho Data Catalog (PDC) and improved detection accuracy by ~80% over PDC's native, non-LLM classifier.", "Used RAG-based retrieval pipelines and prompt engineering to identify and classify sensitive data across large enterprise datasets.", "Integrated LangChain for orchestration and MCP for product tool access."]
+        },
+        {
+          grad: "card-grad-4", badge: "PERSONAL AI", title: "Personal AI & Data Projects", meta: "Python · LangChain · Spring AI · ChromaDB · Ollama",
+          tags: ["Agentic AI", "RAG", "LangChain", "Spring AI"], icons: ["langchain", "chromadb", "ollama", "springai", "python"], iconTop: ["langchain", "chromadb", "ollama"],
+          modalSubtitle: "Self-driven AI engineering projects built outside of work",
+          points: [
+            "Legal Documents Agent: Engineered a private, local AI agent using Python, LangChain, and ChromaDB to analyze sensitive legal records through a RAG-based framework. Integrated Local Ollama for on-premise inference and built a Claude Code-driven agentic workflow to autonomously extract and query contractual terms, maintaining rigorous data confidentiality.",
+            "Intelligent Mutual Fund & Market Analyzer: Architected a full-stack financial analytics platform utilizing a Java and Spring Boot backend. Engineered custom Java-based data sanitization pipelines to strip PII before routing sanitized portfolio data to Spring AI, which dynamically analyzed market trends and sector overlaps to serve comprehensive investment strategy reports to a custom HTML/JavaScript frontend.",
+            "Algorithmic Probability & Predictive Engines: Built a real-time poker winning-odds calculator and a stock price tracking engine using Python, Pandas, and machine learning principles. Ingested live market data to identify historical patterns and forecast market movements through statistical modeling and algorithmic analysis.",
+          ]
         },
       ],
     },
@@ -185,16 +207,16 @@ const RECRUITER = {
       id: "skills", title: "Skills", sub: "My genres",
       cards: [
         {
-          grad: "card-grad-1", badge: "AI / ML", title: "AI & Machine Learning", meta: "LLMs, RAG, Agentic AI",
-          tags: ["GPT", "Claude", "Gemini", "MCP"], icons: ["llm", "rag", "mcp", "copilot"], iconTop: ["llm", "rag", "copilot"],
-          modalSubtitle: "Artificial Intelligence & Agentic Workflows",
-          points: ["LLMs (GPT, Claude, Gemini)", "Retrieval-Augmented Generation (RAG)", "Prompt Engineering", "AI Agents & Agentic Workflows", "Model Context Protocol (MCP)", "AI-Assisted Testing, GitHub Copilot"]
+          grad: "card-grad-1", badge: "AI / AGENTIC", title: "AI & Agentic Engineering", meta: "LLMs, RAG, LangChain, LangGraph, MCP, Spring AI",
+          tags: ["LangChain", "LangGraph", "MCP", "Spring AI", "Agentic RAG"], icons: ["langchain", "langgraph", "llm", "rag", "mcp", "springai", "ollama"], iconTop: ["langchain", "langgraph", "llm", "rag"],
+          modalSubtitle: "AI & Agentic Engineering — LLM orchestration, RAG, multi-agent workflows",
+          points: ["LLMs (GPT, Claude, Gemini) — prompt engineering & fine-tuning", "LangChain & LangGraph — orchestration & multi-agent workflows", "Agentic RAG — retrieval-augmented generation at enterprise scale", "Spring AI — Java-native LLM integration", "Model Context Protocol (MCP) — LLM-to-tool connectivity", "LangSmith — LLM evaluation & tracing", "Ollama — local on-premise model inference", "AI-Assisted Testing, GitHub Copilot"]
         },
         {
           grad: "card-grad-2", badge: "AUTOMATION", title: "Test Automation", meta: "API & UI frameworks",
           tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman", "newman"], iconTop: ["selenium", "cucumber", "postman"],
           modalSubtitle: "Quality engineering & test frameworks",
-          points: ["Selenium, Cucumber (BDD/Gherkin)", "REST Assured, Postman, Newman", "JUnit, Robocorp", "API & UI Automation", "Pairwise test design and regression coverage"]
+          points: ["Selenium, Cucumber (BDD/Gherkin)", "REST Assured, Postman, Newman", "JUnit, Robocorp", "API & UI Automation", "Pairwise test design and regression coverage", "AI-assisted test authoring"]
         },
         {
           grad: "card-grad-5", badge: "PERFORMANCE", title: "Performance Engineering", meta: "Profiling & tuning",
@@ -204,30 +226,31 @@ const RECRUITER = {
         },
         {
           grad: "card-grad-3", badge: "CODE", title: "Languages", meta: "Polyglot developer",
-          tags: ["Java", "Python", "TypeScript"], icons: ["java", "python", "javascript", "typescript", "kotlin", "plsql"], iconTop: ["java", "python", "typescript"],
+          tags: ["Java", "Python", "JavaScript"], icons: ["java", "python", "javascript", "typescript", "kotlin", "plsql"], iconTop: ["java", "python", "typescript"],
           modalSubtitle: "Programming languages",
-          points: ["Java", "Python", "JavaScript / TypeScript", "Kotlin", "PL/SQL", "Shell"]
+          points: ["Java", "Python", "JavaScript / TypeScript", "Kotlin", "SQL/PL/SQL", "Shell"]
         },
         {
           grad: "card-grad-6", badge: "DEVOPS", title: "CI/CD & DevOps", meta: "Pipelines & containers",
-          tags: ["GitHub Actions", "Docker", "K8s"], icons: ["docker", "kubernetes", "jenkins", "gradle", "jfrog"], iconTop: ["docker", "kubernetes", "jenkins"],
+          tags: ["GitHub Actions", "Docker", "AWS"], icons: ["docker", "kubernetes", "jenkins", "gradle", "aws", "n8n"], iconTop: ["docker", "kubernetes", "aws"],
           modalSubtitle: "Build, ship, and deploy",
-          points: ["GitHub Actions, Jenkins", "Gradle, Maven, Apache Ant", "Docker, Kubernetes", "AWS (S3, EC2, Lambda, Secrets Manager)", "JFrog, Traefik"]
+          points: ["GitHub Actions, Jenkins", "Gradle, Maven", "Docker, Kubernetes", "AWS (S3, EC2, Lambda, Secrets Manager)", "JFrog, Traefik", "n8n — workflow automation"]
         },
         {
-          grad: "card-grad-4", badge: "DATA", title: "Data & Databases", meta: "SQL & data platforms",
-          tags: ["Oracle", "PostgreSQL", "MongoDB"], icons: ["oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2"], iconTop: ["oracle", "postgres", "mongodb"],
-          modalSubtitle: "Data engineering & databases",
-          points: ["Pentaho Data Catalog, Pentaho", "MongoDB, Oracle, PostgreSQL", "MySQL, MS SQL, Snowflake", "Vertica, DB2", "JDBC"]
+          grad: "card-grad-4", badge: "DATA", title: "Data & Databases", meta: "SQL, vector stores & data platforms",
+          tags: ["ChromaDB", "PostgreSQL", "Oracle", "MongoDB"], icons: ["chromadb", "oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2"], iconTop: ["chromadb", "oracle", "postgres", "mongodb"],
+          modalSubtitle: "Data engineering, databases & vector stores",
+          points: ["ChromaDB (vector store for RAG)", "PostgreSQL, Oracle, MySQL, MS SQL", "MongoDB, Snowflake, Vertica, DB2", "Pentaho Data Catalog & Integration", "JDBC"]
         },
       ],
     },
     {
       id: "techstack", title: "Tech Stack", sub: "The toolbox", variant: "tech",
-      tech: ["java", "python", "javascript", "typescript", "kotlin", "selenium", "cucumber", "restassured",
+      tech: ["java", "python", "javascript", "typescript", "kotlin", "langchain", "langgraph", "springai", "chromadb",
+        "langsmith", "ollama", "n8n", "aws", "selenium", "cucumber", "restassured",
         "postman", "newman", "spring", "springboot", "microservices", "hibernate", "docker", "kubernetes",
         "jenkins", "gradle", "git", "github", "grafana", "prometheus", "otel", "jmeter", "datadog",
-        "oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2", "jira", "llm", "mcp"],
+        "oracle", "postgres", "mysql", "mongodb", "snowflake", "vertica", "db2", "jira", "llm", "rag", "mcp"],
     },
     {
       id: "education", title: "Education", sub: "Origin story",
@@ -267,18 +290,18 @@ const ENGINEER = {
   glow: "rgba(31,142,241,0.35)",
   hero: {
     eyebrow: "</> BUILT BY RAJATH",
-    title: "Software Engineer",
-    subtitle: "Application Development • AI Engineering • Automation • Performance Engineering",
+    title: "AI & Software Engineer",
+    subtitle: "AI Engineering • Application Development • Automation • Performance Engineering",
     meta: [
-      { type: "badge", text: "Frameworks & Pipelines" },
-      { type: "text", text: "AI / LLM Systems" },
-      { type: "green", text: "Always shipping" },
+      { type: "badge", text: "10 Years in IT & AI" },
+      { type: "text", text: "Building. Breaking. Automating. Improving." },
+      { type: "green", text: "Turning coffee, code, and curiosity into things that actually work." },
     ],
     overview:
-      "A closer look at what I actually build: AI-powered data solutions, end-to-end automation " +
-      "frameworks, performance tooling, and CI/CD pipelines. The projects below reflect the same " +
-      "Senior Software Development Engineer profile from the updated resume, with a stronger emphasis " +
-      "on agentic AI, platform engineering, and reliability work.",
+      "A closer look at what I actually build: Agentic AI systems, LLM-powered applications, " +
+      "end-to-end automation frameworks, and performance tooling. Specializing in LangChain, LangGraph, " +
+      "and Spring AI for multi-agent orchestration and RAG-based solutions. The projects below span " +
+      "enterprise AI delivery, personal AI engineering experiments, and platform reliability work.",
     actions: [
       { label: "▶ View Projects", cls: "btn-play", scrollTo: "row-projects" },
       { label: "★ GitHub", cls: "btn-accent", href: LINKS.github, external: true },
@@ -286,88 +309,121 @@ const ENGINEER = {
   },
   rows: [
     {
-      id: "projects", title: "Featured Projects", sub: "Deep dives",
+      id: "projects", title: "Enterprise Projects", sub: "Work delivered at scale",
       cards: [
         {
-          grad: "card-grad-1", badge: "AI · FLAGSHIP", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog · ~80% accuracy",
-          tags: ["LLMs", "RAG", "Data Governance"], icons: ["llm", "rag", "mcp"], iconTop: ["llm", "rag", "mcp"],
+          grad: "card-grad-1", badge: "AI - FLAGSHIP", title: "LLM-Powered PII Detection", meta: "Pentaho Data Catalog - approx. 80% accuracy",
+          tags: ["LangChain", "RAG", "Data Governance"], icons: ["langchain", "llm", "rag", "mcp", "python"], iconTop: ["langchain", "llm", "rag"],
           modalSubtitle: "Custom AI data-identification engine for enterprise customers",
           points: [
-            "Built an LLM-backed classification layer (RAG + prompt engineering) integrated directly into Pentaho Data Catalog.",
-            "Achieved ~80% detection accuracy vs the standard non-LLM PDC solution while automatically tagging sensitive customer data with PII classifications.",
-            "Stack: LLMs (GPT/Claude/Gemini), RAG pipelines, MCP for tool access, Java/Python services.",
+            "Built an LLM-powered classification layer using LangChain, RAG, and prompt engineering, integrated directly into Pentaho Data Catalog.",
+            "Achieved approximately 80% detection accuracy compared to PDC's standard non-LLM classifier, automatically tagging sensitive customer data with PII labels.",
+            "Tech stack: LangChain, GPT/Claude/Gemini, RAG pipelines, MCP for tool access, Java and Python services.",
           ]
         },
         {
-          grad: "card-grad-4", badge: "AI AGENTS", title: "Agentic AI + MCP Integration", meta: "Context-aware AI services",
-          tags: ["Agentic AI", "MCP", "Prompt Eng"], icons: ["mcp", "llm", "copilot"], iconTop: ["mcp", "llm", "copilot"],
-          modalSubtitle: "Connecting LLMs to internal product tooling",
+          grad: "card-grad-4", badge: "AI CHATBOT", title: "AI Chatbot - Pentaho Docs and QA", meta: "LangChain - RAG - PractiTest",
+          tags: ["LangChain", "RAG", "Chatbot", "LLMs"], icons: ["langchain", "llm", "rag", "langsmith"], iconTop: ["langchain", "llm", "rag"],
+          modalSubtitle: "Customer-facing AI chatbot for autonomous product support",
           points: [
-            "Designed agentic workflows that detect, classify, and govern data with minimal human steering.",
-            "Integrated Model Context Protocol (MCP) so LLMs can call internal product tools safely.",
-            "Packaged reusable AI services consumed across multiple product use cases.",
+            "Built and deployed a customer-facing AI chatbot that resolves client questions about Pentaho product usage without manual intervention.",
+            "Used LangChain to index and retrieve context from official Pentaho documentation and thousands of PractiTest QA test cases.",
+            "Built a RAG pipeline over multiple document sources including docs, tickets, and test cases to deliver accurate, grounded answers.",
+            "Integrated LangSmith for LLM evaluation, trace logging, and quality monitoring in production.",
           ]
         },
         {
-          grad: "card-grad-2", badge: "AUTOMATION", title: "End-to-End Test Automation", meta: "API + UI frameworks",
+          grad: "card-grad-6", badge: "AGENTIC AI", title: "Agentic AI and MCP Integration", meta: "LangGraph - MCP - Context-aware services",
+          tags: ["Agentic AI", "MCP", "LangGraph", "Prompt Eng"], icons: ["mcp", "langgraph", "llm", "langchain"], iconTop: ["mcp", "langgraph", "llm"],
+          modalSubtitle: "Connecting LLMs to internal product tooling via MCP",
+          points: [
+            "Designed multi-step agentic workflows using LangGraph that detect, classify, and govern data with minimal manual involvement.",
+            "Integrated Model Context Protocol (MCP) to allow LLMs to securely call internal product tools and fetch live context.",
+            "Packaged these as reusable AI services that are consumed across multiple product features.",
+          ]
+        },
+        {
+          grad: "card-grad-2", badge: "AUTOMATION", title: "End-to-End Test Automation", meta: "API and UI frameworks",
           tags: ["Selenium", "Cucumber", "REST Assured"], icons: ["selenium", "cucumber", "restassured", "postman", "newman"], iconTop: ["selenium", "cucumber", "postman"],
-          modalSubtitle: "Framework architecture for coverage & speed",
+          modalSubtitle: "Automation framework covering API and UI layers",
           points: [
-            "Architected reusable automation frameworks for both API and GUI layers.",
-            "REST Assured + Postman + Newman for API verification; Selenium + Cucumber BDD for UI flows.",
-            "Cut regression risk and sped up releases; accelerated test authoring with AI/Copilot.",
-            "Built smoke test coverage and BDD suites across core product workflows.",
+            "Designed and built reusable automation frameworks covering both API and UI test layers.",
+            "Used REST Assured, Postman, and Newman for API testing; Selenium and Cucumber BDD for UI test flows.",
+            "Reduced a two-day manual regression cycle to approximately two hours of automated execution with 100% regression coverage.",
+            "Accelerated test authoring by integrating AI tools and GitHub Copilot into the development workflow.",
           ]
         },
         {
-          grad: "card-grad-5", badge: "PERFORMANCE", title: "Observability & Perf Tuning", meta: "Live monitoring + optimization",
+          grad: "card-grad-5", badge: "PERFORMANCE", title: "Observability and Performance Tuning", meta: "Live monitoring and optimization",
           tags: ["Grafana", "Prometheus", "OpenTelemetry"], icons: ["grafana", "prometheus", "otel", "loki", "jmeter", "datadog"], iconTop: ["grafana", "prometheus", "loki"],
-          modalSubtitle: "Performance engineering & production reliability",
+          modalSubtitle: "Performance engineering and production reliability",
           points: [
-            "Profiled throughput, latency, and resource usage to hit enterprise scalability targets.",
-            "Stood up Grafana + Prometheus + OpenObserve + Loki + OpenTelemetry for full visibility.",
-            "Used the stack to identify Java performance bottlenecks, memory leak issues, and caching problems.",
+            "Profiled throughput, latency, and resource consumption to meet enterprise scalability targets.",
+            "Set up a full observability stack using Grafana, Prometheus, OpenObserve, Loki, and OpenTelemetry.",
+            "Used the observability data to identify Java performance bottlenecks, memory leaks, and caching issues, leading to targeted fixes.",
           ]
         },
         {
-          grad: "card-grad-3", badge: "IMPACT", title: "Data Archival — 50% Cost Cut", meta: "Decathlon · Shell + PL/SQL",
-          tags: ["Shell", "PL/SQL", "AWS"], icons: ["shell", "plsql"], iconTop: ["shell", "plsql"],
-          modalSubtitle: "Infrastructure cost optimization",
-          points: ["Designed a data-archival solution in Shell + PL/SQL.", "Reduced AWS server cost by ~50% while improving performance.", "Cleared several longstanding production issues."]
-        },
-        {
-          grad: "card-grad-6", badge: "CI/CD", title: "Data Migration Platform", meta: "Pentaho · Java + PDI/PDC",
+          grad: "card-grad-6", badge: "PLATFORM", title: "Data Migration Platform", meta: "Pentaho - Java - PDI and PDC",
           tags: ["Java", "Pentaho", "Data Migration"], icons: ["java", "springboot", "oracle"], iconTop: ["java", "springboot"],
-          modalSubtitle: "Led a cross-functional team to build a data migration platform for heterogeneous systems",
-          points: ["Led a team of 4 to 6 engineers to design and build DataPipes for source-to-target migrations across heterogeneous systems.", "Developed custom Java modules to extend Pentaho Data Integration and Data Catalog with masking and encryption capabilities.", "Supported a modular pipeline pattern that avoided pipeline-specific rework and kept delivery timelines on track."]
+          modalSubtitle: "Cross-functional team project to build a data migration platform",
+          points: [
+            "Led a team of 5 to 8 engineers to design and build DataPipes, a Java-based platform for migrating data between heterogeneous source and target systems.",
+            "Built custom Java modules that extended Pentaho Data Integration and Data Catalog with masking and encryption to protect sensitive data during transfers.",
+            "Designed a modular pipeline architecture that supported multiple data types without requiring system-specific rework.",
+          ]
         },
       ],
     },
     {
-      id: "github", title: "GitHub Projects", sub: "Live repos — more coming soon",
+      id: "personal", title: "Personal Projects", sub: "Self-built AI projects",
+      cards: [
+        {
+          grad: "card-grad-5", badge: "PERSONAL AI", title: "Legal Documents Agent", meta: "Python - LangChain - ChromaDB - Ollama",
+          tags: ["Agentic AI", "RAG", "ChromaDB", "Ollama"], icons: ["langchain", "chromadb", "ollama", "python"], iconTop: ["langchain", "chromadb", "ollama"],
+          modalSubtitle: "Private local AI agent for analyzing sensitive legal documents",
+          points: [
+            "Built a fully local AI agent using Python, LangChain, and ChromaDB to analyze sensitive legal records through a RAG-based pipeline.",
+            "Integrated Ollama for on-device model inference so no data is sent to external LLM providers, ensuring full privacy.",
+            "Built an agentic workflow that autonomously extracts and answers questions about contract terms, clauses, and obligations.",
+            "All processing runs locally on the machine with no cloud dependencies, maintaining strict data confidentiality.",
+          ]
+        },
+        {
+          grad: "card-grad-2", badge: "PERSONAL AI", title: "Mutual Fund and Market Analyzer", meta: "Spring Boot - Spring AI - Java",
+          tags: ["Spring AI", "Java", "Spring Boot", "LLMs"], icons: ["springai", "springboot", "java", "llm"], iconTop: ["springai", "springboot", "java"],
+          modalSubtitle: "Full-stack financial analytics platform with AI-driven insights",
+          points: [
+            "Built a full-stack financial analytics platform using Java and Spring Boot on the backend.",
+            "Wrote custom Java data sanitization pipelines to remove PII from portfolio data before passing it to Spring AI.",
+            "Spring AI analyzes market trends and sector overlaps and generates structured investment strategy reports.",
+            "Reports are displayed on a custom HTML and JavaScript frontend with data visualization.",
+          ]
+        },
+        {
+          grad: "card-grad-3", badge: "PERSONAL AI", title: "Predictive Engines - Poker and Market", meta: "Python - Pandas - Machine Learning - Live Data",
+          tags: ["Python", "Pandas", "ML", "Live Data"], icons: ["python", "llm"], iconTop: ["python"],
+          modalSubtitle: "Real-time probability calculator and stock price forecasting engine",
+          points: [
+            "Built a real-time poker winning-odds calculator in Python using algorithmic probability modeling.",
+            "Built a stock price tracking engine that ingests live market data using Python and Pandas.",
+            "The engine identifies historical patterns and indicators to forecast market movements using statistical modeling.",
+            "Applied machine learning techniques to improve predictive accuracy on time-series financial data.",
+          ]
+        },
+      ],
+    },
+    {
+      id: "github", title: "GitHub Projects", sub: "Live repos - more coming soon",
       isGithub: true,
     },
     {
       id: "techstack", title: "Tech Stack", sub: "What I build with", variant: "tech",
-      tech: ["java", "python", "typescript", "selenium", "cucumber", "restassured", "spring", "springboot",
+      tech: ["java", "python", "typescript", "langchain", "langgraph", "springai", "chromadb", "langsmith",
+        "ollama", "n8n", "aws", "selenium", "cucumber", "restassured", "spring", "springboot",
         "microservices", "hibernate", "docker", "kubernetes", "jenkins", "gradle", "git", "github",
         "grafana", "prometheus", "otel", "jmeter", "datadog", "postgres", "mongodb", "llm", "rag",
         "mcp", "copilot"],
-    },
-    {
-      id: "experiments", title: "Lab / Experiments", sub: "Tinkering zone",
-      cards: [
-        {
-          grad: "card-grad-4", badge: "WIP", title: "AI Agent Playground", meta: "RAG + tools sandbox",
-          tags: ["Agentic AI", "RAG"], iconTop: ["llm", "rag", "mcp"], modalSubtitle: "Personal experiments with agent frameworks",
-          points: ["A space for prototyping agentic AI patterns, prompt strategies, and MCP tools.", "Repos coming to the GitHub row above."]
-        },
-        {
-          grad: "card-grad-2", badge: "WIP", title: "Automation Snippets", meta: "Reusable test utilities",
-          tags: ["Selenium", "Java"], iconTop: ["selenium", "java", "git"], modalSubtitle: "Handy automation helpers",
-          points: ["Collection of reusable framework utilities and patterns.", "To be published on GitHub."]
-        },
-      ],
     },
   ],
 };
@@ -490,6 +546,11 @@ const VISITOR = {
 const PROFILES = { recruiter: RECRUITER, engineer: ENGINEER, visitor: VISITOR };
 const PROFILE_LABEL = { recruiter: "Recruiter", engineer: "Engineer", visitor: "Visitor" };
 const PROFILE_AVATAR = { recruiter: "RG", engineer: "</>", visitor: "🍿" };
+const PROFILE_AVATAR_IMG = {
+  recruiter: "images/avatar-recruiter.png",
+  engineer: "images/avatar-engineer.png",
+  visitor: "images/avatar-visitor.png",
+};
 
 /* ---------- DOM helpers ---------- */
 const $ = (sel) => document.querySelector(sel);
@@ -594,10 +655,17 @@ function renderNav(profile, key) {
     gh.innerHTML = '<i class="devicon-github-original"></i>'; right.appendChild(gh);
   }
 
+  // Profile switcher - opens dropdown
   const switcher = create("button", "nav-switch");
-  switcher.innerHTML = `<span class="mini-avatar">${PROFILE_AVATAR[key]}</span><span>${PROFILE_LABEL[key]} ▾</span>`;
-  switcher.addEventListener("click", showGate);
+  switcher.id = "nav-switcher";
+  switcher.innerHTML = `<img src="${PROFILE_AVATAR_IMG[key]}" alt="${PROFILE_LABEL[key]}" class="mini-avatar-img" /><span>${PROFILE_LABEL[key]} &#9662;</span>`;
+  switcher.addEventListener("click", (e) => { e.stopPropagation(); toggleDropdown(key); });
   right.appendChild(switcher);
+
+  // Mark active item in dropdown
+  document.querySelectorAll(".profile-dropdown-item").forEach((item) => {
+    item.classList.toggle("active", item.dataset.switch === key);
+  });
 }
 
 /* ---------- Rows ---------- */
@@ -633,6 +701,7 @@ function buildTechGrid(keys) {
     const t = TECH[k]; if (!t) return;
     const chip = create("div", "tech-chip");
     if (t.icon) { const i = create("i"); i.className = t.icon; chip.appendChild(i); }
+    else if (t.img) { const im = create("img", "tech-img-icon"); im.src = t.img; im.alt = t.name; im.loading = "lazy"; chip.appendChild(im); }
     else { const e = create("span", "tech-emoji"); e.textContent = t.emoji; chip.appendChild(e); }
     const name = create("span"); name.textContent = t.name; chip.appendChild(name);
     grid.appendChild(chip);
@@ -680,6 +749,7 @@ function buildCardTop(card, isPoster) {
     keys.forEach((k) => {
       const t = TECH[k]; if (!t) return;
       if (t.icon) { const i = create("i"); i.className = t.icon; i.title = t.name; wrap.appendChild(i); }
+      else if (t.img) { const im = create("img", "tech-img-icon"); im.src = t.img; im.alt = t.name; im.title = t.name; im.loading = "lazy"; wrap.appendChild(im); }
       else { const e = create("span", "tech-emoji"); e.textContent = t.emoji; e.title = t.name; wrap.appendChild(e); }
     });
     top.appendChild(wrap);
@@ -766,6 +836,7 @@ function openModal(card) {
   (card.icons || []).forEach((k) => {
     const t = TECH[k]; if (!t) return;
     if (t.icon) { const i = create("i"); i.className = t.icon; i.title = t.name; icons.appendChild(i); }
+    else if (t.img) { const im = create("img", "tech-img-icon"); im.src = t.img; im.alt = t.name; im.title = t.name; im.loading = "lazy"; icons.appendChild(im); }
     else { const e = create("span", "tech-emoji"); e.textContent = t.emoji; e.title = t.name; icons.appendChild(e); }
   });
 
@@ -800,13 +871,46 @@ function renderFooter() {
   });
 }
 
+/* ---------- Dropdown toggle ---------- */
+function toggleDropdown(currentKey) {
+  const dd = $("#profile-dropdown");
+  dd.classList.toggle("hidden");
+}
+
+function closeDropdown() {
+  const dd = $("#profile-dropdown");
+  if (dd) dd.classList.add("hidden");
+}
+
 /* ---------- Misc wiring ---------- */
 function initChrome() {
   const nav = $("#nav");
   window.addEventListener("scroll", () => nav.classList.toggle("scrolled", window.scrollY > 40));
   $("#modal-close").addEventListener("click", closeModal);
   $("#modal-overlay").addEventListener("click", (e) => { if (e.target.id === "modal-overlay") closeModal(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") { closeModal(); closeDropdown(); } });
+
+  // Home button -> profile gate
+  $("#logo-home").addEventListener("click", () => { closeDropdown(); showGate(); });
+
+  // Dropdown profile switch items
+  document.querySelectorAll(".profile-dropdown-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      const key = item.dataset.switch;
+      closeDropdown();
+      if (key !== CURRENT) selectProfile(key);
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    const dd = $("#profile-dropdown");
+    const switcher = $("#nav-switcher");
+    if (dd && !dd.classList.contains("hidden") &&
+      !dd.contains(e.target) && e.target !== switcher && !switcher.contains(e.target)) {
+      closeDropdown();
+    }
+  });
 }
 
 /* ---------- Intro splash ---------- */
