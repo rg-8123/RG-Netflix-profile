@@ -78,12 +78,12 @@ const TECH = {
   // AI & new tool logos (local image files)
   langchain: { img: "images/langchain-logo.svg", name: "LangChain" },
   langgraph: { img: "images/langgraph-logo.svg", name: "LangGraph" },
-  springai:  { img: "images/springai-logo.svg",  name: "Spring AI" },
-  chromadb:  { img: "images/chromadb-logo.png",  name: "ChromaDB" },
-  n8n:       { img: "images/n8n-logo.svg",       name: "n8n" },
+  springai: { img: "images/springai-logo.svg", name: "Spring AI" },
+  chromadb: { img: "images/chromadb-logo.png", name: "ChromaDB" },
+  n8n: { img: "images/n8n-logo.svg", name: "n8n" },
   langsmith: { img: "images/langsmith-logo.svg", name: "LangSmith" },
-  ollama:    { img: "images/ollama-logo.svg",    name: "Ollama" },
-  aws:       { icon: "devicon-amazonwebservices-plain-wordmark colored", name: "AWS" },
+  ollama: { img: "images/ollama-logo.svg", name: "Ollama" },
+  aws: { icon: "devicon-amazonwebservices-plain-wordmark colored", name: "AWS" },
 };
 
 /* =========================================================
@@ -97,7 +97,7 @@ const RECRUITER = {
     title: "Rajath Gowda",
     subtitle: "Software Development & AI Engineer",
     meta: [
-      { type: "badge", text: "10 Years in IT & AI" },
+      { type: "badge", text: "10 Years of Experience" },
       { type: "text", text: "Bengaluru, India" },
       { type: "green", text: "96% Match" },
     ],
@@ -291,11 +291,11 @@ const ENGINEER = {
   hero: {
     eyebrow: "</> BUILT BY RAJATH",
     title: "AI & Software Engineer",
-    subtitle: "Agentic AI • LLM Engineering • Platform Engineering • Automation",
+    subtitle: "AI Engineering • Application Development • Automation • Performance Engineering",
     meta: [
-      { type: "badge", text: "LangChain · LangGraph · Spring AI" },
-      { type: "text", text: "Agentic RAG Systems" },
-      { type: "green", text: "Always shipping" },
+      { type: "badge", text: "10 Years in IT & AI" },
+      { type: "text", text: "Building. Breaking. Automating. Improving." },
+      { type: "green", text: "Turning coffee, code, and curiosity into things that actually work." },
     ],
     overview:
       "A closer look at what I actually build: Agentic AI systems, LLM-powered applications, " +
@@ -546,6 +546,11 @@ const VISITOR = {
 const PROFILES = { recruiter: RECRUITER, engineer: ENGINEER, visitor: VISITOR };
 const PROFILE_LABEL = { recruiter: "Recruiter", engineer: "Engineer", visitor: "Visitor" };
 const PROFILE_AVATAR = { recruiter: "RG", engineer: "</>", visitor: "🍿" };
+const PROFILE_AVATAR_IMG = {
+  recruiter: "images/avatar-recruiter.png",
+  engineer: "images/avatar-engineer.png",
+  visitor: "images/avatar-visitor.png",
+};
 
 /* ---------- DOM helpers ---------- */
 const $ = (sel) => document.querySelector(sel);
@@ -651,10 +656,9 @@ function renderNav(profile, key) {
   }
 
   // Profile switcher - opens dropdown
-  const avatarText = key === "engineer" ? "</>": PROFILE_AVATAR[key];
   const switcher = create("button", "nav-switch");
   switcher.id = "nav-switcher";
-  switcher.innerHTML = `<span class="mini-avatar">${avatarText}</span><span>${PROFILE_LABEL[key]} &#9662;</span>`;
+  switcher.innerHTML = `<img src="${PROFILE_AVATAR_IMG[key]}" alt="${PROFILE_LABEL[key]}" class="mini-avatar-img" /><span>${PROFILE_LABEL[key]} &#9662;</span>`;
   switcher.addEventListener("click", (e) => { e.stopPropagation(); toggleDropdown(key); });
   right.appendChild(switcher);
 
@@ -903,7 +907,7 @@ function initChrome() {
     const dd = $("#profile-dropdown");
     const switcher = $("#nav-switcher");
     if (dd && !dd.classList.contains("hidden") &&
-        !dd.contains(e.target) && e.target !== switcher && !switcher.contains(e.target)) {
+      !dd.contains(e.target) && e.target !== switcher && !switcher.contains(e.target)) {
       closeDropdown();
     }
   });
