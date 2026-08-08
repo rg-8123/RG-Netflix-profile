@@ -276,6 +276,7 @@ a { color: inherit; text-decoration: none; }
 }
 .card-icons i { font-size: 2.5rem; color: #fff; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); }
 .card-icons .tech-emoji { font-size: 2.1rem; line-height: 1; }
+.card-icons .tech-img-icon { width: 2.5rem; height: 2.5rem; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5)); }
 .card-top::after {
   content: ""; position: absolute; inset: 0; z-index: 1;
   background: radial-gradient(circle at 50% 40%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.18) 100%);
@@ -340,6 +341,7 @@ a { color: inherit; text-decoration: none; }
 .tech-chip:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--accent) 60%, transparent); }
 .tech-chip i { font-size: 2.4rem; }
 .tech-chip .tech-emoji { font-size: 2.1rem; line-height: 1; }
+.tech-chip .tech-img-icon { width: 2.4rem; height: 2.4rem; object-fit: contain; }
 .tech-chip span { font-size: 0.72rem; color: var(--muted); text-align: center; }
 
 /* ===================== MODAL ===================== */
@@ -375,6 +377,7 @@ a { color: inherit; text-decoration: none; }
 .modal-icons { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; align-items: center; }
 .modal-icons i { font-size: 2rem; }
 .modal-icons .tech-emoji { font-size: 1.6rem; }
+.modal-icons .tech-img-icon { width: 2rem; height: 2rem; object-fit: contain; }
 .modal-cta { margin-top: 22px; }
 .modal-cta a { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; }
 .modal-cta a:hover { filter: brightness(0.9); }

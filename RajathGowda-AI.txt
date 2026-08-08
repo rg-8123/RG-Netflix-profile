@@ -1,0 +1,52 @@
+﻿RAJATH GOWDA
+Software Development and AI Engineer 
+Bengaluru, India  |  +91 8123200196  |  rajathg64@gmail.com | linkedin.com/in/rajath-g | github.com/rg-8123 
+PROFESSIONAL SUMMARY
+Software Development and AI Engineer with a decade of experience designing scalable enterprise software, integrating LLM-powered applications, and solving complex client challenges in Agile environments. Proven track record of leading cross-functional teams to build automated, reliable data platforms that solve complex business challenges and reduce manual effort. Specialized in building advanced AI frameworks, Agentic RAG, and multi-agent orchestration using Python, LangChain, LangGraph & Spring AI. Combined strong development skills with robust system optimization expertise, and was consistently recognized across every role for improving infrastructure reliability, cloud costs, and deployment speed.
+TECHNICAL SKILLS
+AI & Agentic Engineering: LLMs, RAG, Agentic RAG, LangChain, LangGraph, Multi-Agent Workflows, LLM evaluation, MCPs, Spring AI, Model Fine-Tuning, Prompt Engineering, AI-Assisted Testing
+Languages: Java, Python, JavaScript, SQL/PLSQL, Shell, Kotlin
+Database & Vector Stores: ChromaDB, PostgreSQL, Oracle, MySQL, MS SQL, Snowflake, MongoDB, Vertica, DB2
+Cloud and DevOps: AWS (S3, EC2, Lambda, Secrets), n8n, LangSmith, Docker, Jenkins, GitHub Actions, Maven, Gradle, JFrog, Traefik
+Test Automation: Selenium, Cucumber (BDD/Gherkin), REST Assured, RPA, Postman, Test Framework Design
+Backend and Frameworks: SpringBoot, Microservices, REST API, Design Patterns, Multithreading, Hibernate
+Performance & Observability: Grafana, Prometheus, OpenTelemetry, Loki, OpenObserve, Cloudwatch, JMeter, Datadog 
+PROFESSIONAL EXPERIENCE
+Software Engineering Specialist (AI & Data), Pentaho, Hitachi Vantara Ltd.                             Sept 2020 - Present
+Bengaluru, India
+* Design and deliver custom, AI-powered data identification solutions for enterprise customers that automatically tag sensitive customer data with PII classifications using LLMs integrated with the Pentaho Data Catalog (PDC) product, achieving ~80% detection accuracy relative to PDC's standard (non-LLM) solution.
+* Engineered and deployed a customer-facing AI chatbot to autonomously resolve client inquiries regarding application usage, utilizing LangChain to index and retrieve rich context from official Pentaho documentation and thousands of proprietary PractiTest QA test cases.
+* Led a team of 5 to 8 engineers to design and build DataPipes, a Java based platform that migrated data between heterogeneous source and target systems using Pentaho Data Integration (PDI) and Pentaho Data Catalog (PDC).
+* Designed and developed custom Java modules, packaged as executable JAR files, that extended PDI and PDC with masking and encryption functions to protect sensitive data during cross-system transfers.
+* Architected a modular pipeline design that supported multiple source and target data types without requiring pipeline -specific rework, and owned technical decisions, code reviews, and delivery timelines across the project lifecycle.
+* Built an observability stack (Grafana, Prometheus, OpenObserve, Loki, OpenTelemetry) across both products for real-time metrics, logs, and performance monitoring. Used the stack to identify multiple performance bottlenecks and memory leak scenarios and drove improvements to the application's caching mechanism as a result.
+* Led a cross-functional engineering team to design and build custom software solutions for Customers. 
+* Built an API automation suite (Postman, Newman CLI) that covered hundreds of test cases across PDC's core features, applying pairwise test case design to maximize coverage while minimizing test count and maintenance overhead.
+* Cut a 2-day manual regression cycle to ~2 hours of automated execution and achieved 100% regression coverage on every release.
+* Built smoke test GUI automation using the Robocorp framework for PDC and designed BDD-based UI test suites (Selenium, Cucumber) for the PDI web application, covering key user workflows end to end.
+* Operate along with the Production Engineering team to triage and resolve customer-reported issues, delivering high-quality fixes on a sprint basis in an Agile environment.
+IT Technical Leader, Decathlon Sports India                                                                                     July 2019 - Sept 2020
+Bengaluru, India
+* Designed and built Spring Boot-based REST APIs to seamlessly integrate Decathlon's core billing software with third-party wireless card payment terminals, successfully deploying the solution to power offline transactions across all retail stores in India.
+* Engineered a robust data archival workflow utilizing Shell and PostgreSQL that optimized cloud infrastructure utilization, cutting AWS server costs by ~50% while resolving long-standing client-side data latency issues.
+* Led technical deployment teams through an organization-wide POS billing software upgrade, ensuring zero downtime and stable feature rollouts across the nationwide network.
+* Migrated the core code repository from Mercurial to GitHub, establishing stringent security protocols and modernizing release management workflows.
+* Resolved real-time production incidents while maintaining code quality and customer support standards.
+Application Developer, Tech Mahindra Limited                                                                                Sept 2016 - June 2019
+Bengaluru, India
+* Developed web applications using Java, JSP, PL/SQL, JavaScript, HTML, and CSS to visualize various database statistics to client users.
+* Designed and built custom client applications using Java, JavaScript, and PL/SQL based on business requirements.
+* Enhanced the internal ETL tool with new features, defect fixes, and UI improvements that boosted overall performance.
+* Developed scheduled jobs (cron) for various business needs, reducing manual effort and improving efficiency.
+* Authored JUnit tests and automation scripts for unit testing.
+PERSONAL AI & DATA PROJECTS
+* Personal Legal Documents Agent: Engineered a private, local AI agent using Python, LangChain, and ChromaDB to analyze sensitive legal records through a RAG-based framework. Integrated Local Ollama for on-premise inference and built a Claude Code-driven agentic workflow to autonomously extract and query contractual terms, maintaining rigorous data confidentiality and preventing information exposure to external LLM providers.
+* Intelligent Mutual Fund & Market Analyzer: Architected a full-stack financial analytics platform utilizing a Java and Spring Boot backend. Engineered custom Java-based data sanitization pipelines to strictly strip PII before routing sanitized portfolio data to Spring AI, which dynamically analyzed market trends and sector overlaps to serve comprehensive investment strategy reports to a custom HTML/JavaScript frontend UI.
+* Algorithmic Probability & Predictive Engines: Built a real-time poker winning-odds calculator and a stock price tracking engine utilizing Python, Pandas, and machine learning principles. Ingested live market data to identify historical patterns and industry indicators, forecasting market movements through advanced statistical modeling and algorithmic analysis.
+EDUCATION
+Bachelor of Engineering (Electronics & Communications)                                                             Aug 2012 - June 2016
+New Horizon College of Engineering, Bengaluru, India
+ACHIEVEMENTS
+* Hitachi Vantara (Dec 2025): Received recognition by leadership for identifying critical performance issues and driving improvements that enhanced system reliability.
+* Decathlon India (June 2020): Awarded Certificate of Appreciation for outstanding engineering contributions to the retail team.
+* Tech Mahindra (Dec 2017 & Dec 2018): Received “Pat on the Back" awards for excellence in project delivery and technical execution.
