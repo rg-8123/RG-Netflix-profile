@@ -11,16 +11,32 @@
 /* ---------- Links (update these) ---------- */
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/rajath-g",
-  github: "https://github.com/",            // your GitHub profile
+  github: "https://github.com/rg-8123",            // your GitHub profile
   email: "mailto:rajathg64@gmail.com",
   phone: "tel:+918123200196",
   resume: "RajathGowda-AI-Engineer.pdf",
 };
 
-/* ---------- GitHub repos for the Engineer page (add later) ---------- */
-// Fill these in any time. Leave empty for "Add repo" placeholders.
+/* ---------- GitHub repos for the Engineer page ---------- */
 const GITHUB_REPOS = [
-  // { title: "my-automation-framework", desc: "Selenium + Cucumber BDD framework", url: "https://github.com/you/repo", tags: ["Java", "Selenium"] },
+  {
+    title: "texas-holdem-trainer",
+    desc: "Browser-based Texas Hold'em equity trainer featuring a 7-to-5 card evaluator, 20,000-trial Monte Carlo & exact enumeration engines for street-by-street win-rate estimation against 1–5 bot opponents.",
+    url: "https://github.com/rg-8123/texas-holdem-trainer",
+    tags: ["JavaScript", "Monte Carlo", "Probability", "Poker"]
+  },
+  {
+    title: "ai-stock-predictor",
+    desc: "Stock price forecasting engine using time-series models combined with current market trends and fundamental financial data.",
+    url: "https://github.com/rg-8123/ai-stock-predictor",
+    tags: ["Python", "Time Series", "Pandas", "Stock Fundamentals"]
+  },
+  {
+    title: "mf-report-analyser",
+    desc: "Mutual fund portfolio analyzer performing micro-level asset allocation breakdown and tailored investment suggestions based on market trends.",
+    url: "https://github.com/rg-8123/mf-report-analyser",
+    tags: ["Java", "Spring AI", "Mutual Funds", "Portfolio Analytics"]
+  }
 ];
 
 /* ---------- Tech stack (devicon classes or emoji fallback) ---------- */
@@ -197,8 +213,8 @@ const RECRUITER = {
           modalSubtitle: "Self-driven AI engineering projects built outside of work",
           points: [
             "Legal Documents Agent: Engineered a private, local AI agent using Python, LangChain, and ChromaDB to analyze sensitive legal records through a RAG-based framework. Integrated Local Ollama for on-premise inference and built a Claude Code-driven agentic workflow to autonomously extract and query contractual terms, maintaining rigorous data confidentiality.",
-            "Intelligent Mutual Fund & Market Analyzer: Architected a full-stack financial analytics platform utilizing a Java and Spring Boot backend. Engineered custom Java-based data sanitization pipelines to strip PII before routing sanitized portfolio data to Spring AI, which dynamically analyzed market trends and sector overlaps to serve comprehensive investment strategy reports to a custom HTML/JavaScript frontend.",
-            "Algorithmic Probability & Predictive Engines: Built a real-time poker winning-odds calculator and a stock price tracking engine using Python, Pandas, and machine learning principles. Ingested live market data to identify historical patterns and forecast market movements through statistical modeling and algorithmic analysis.",
+            "Intelligent Mutual Fund & Market Analyzer: Architected a financial analytics platform focusing on micro-level analysis of mutual funds and asset allocations. Sanitizes portfolio PII and uses Spring AI to deliver granular asset breakdown and investment suggestions aligned with market trends.",
+            "Texas Hold'em Trainer & AI Stock Predictor: Built a browser-based Texas Hold'em equity trainer using 20,000-trial Monte Carlo & exact street enumeration engines against bot opponents, and a stock forecasting engine combining time-series modeling with current market trends and stock fundamentals.",
           ]
         },
       ],
@@ -391,24 +407,26 @@ const ENGINEER = {
         },
         {
           grad: "card-grad-2", badge: "PERSONAL AI", title: "Mutual Fund and Market Analyzer", meta: "Spring Boot - Spring AI - Java",
-          tags: ["Spring AI", "Java", "Spring Boot", "LLMs"], icons: ["springai", "springboot", "java", "llm"], iconTop: ["springai", "springboot", "java"],
-          modalSubtitle: "Full-stack financial analytics platform with AI-driven insights",
+          tags: ["Spring AI", "Java", "Spring Boot", "Mutual Funds"], icons: ["springai", "springboot", "java", "llm"], iconTop: ["springai", "springboot", "java"],
+          modalSubtitle: "Mutual fund & asset allocation analyzer with market-driven suggestions",
+          ctaLabel: "View on GitHub", ctaHref: "https://github.com/rg-8123/mf-report-analyser",
           points: [
-            "Built a full-stack financial analytics platform using Java and Spring Boot on the backend.",
-            "Wrote custom Java data sanitization pipelines to remove PII from portfolio data before passing it to Spring AI.",
-            "Spring AI analyzes market trends and sector overlaps and generates structured investment strategy reports.",
-            "Reports are displayed on a custom HTML and JavaScript frontend with data visualization.",
+            "Built a full-stack mutual fund analytics platform using Java and Spring Boot on the backend.",
+            "Focuses on micro-level analysis of funds and detailed asset allocation breakdowns.",
+            "Sanitizes portfolio data and uses Spring AI to analyze market trends and sector overlaps to provide targeted investment suggestions.",
+            "Reports are displayed on an interactive frontend with granular asset visualization.",
           ]
         },
         {
-          grad: "card-grad-3", badge: "PERSONAL AI", title: "Predictive Engines - Poker and Market", meta: "Python - Pandas - Machine Learning - Live Data",
-          tags: ["Python", "Pandas", "ML", "Live Data"], icons: ["python", "llm"], iconTop: ["python"],
-          modalSubtitle: "Real-time probability calculator and stock price forecasting engine",
+          grad: "card-grad-3", badge: "PERSONAL AI", title: "Texas Hold'em Trainer & Stock Predictor", meta: "Python - JavaScript - Time Series - Monte Carlo",
+          tags: ["JavaScript", "Python", "Time Series", "Monte Carlo"], icons: ["javascript", "python", "llm"], iconTop: ["javascript", "python"],
+          modalSubtitle: "Poker equity trainer engine & stock time-series predictive model",
+          ctaLabel: "Texas Hold'em Trainer Repo", ctaHref: "https://github.com/rg-8123/texas-holdem-trainer",
           points: [
-            "Built a real-time poker winning-odds calculator in Python using algorithmic probability modeling.",
-            "Built a stock price tracking engine that ingests live market data using Python and Pandas.",
-            "The engine identifies historical patterns and indicators to forecast market movements using statistical modeling.",
-            "Applied machine learning techniques to improve predictive accuracy on time-series financial data.",
+            "Texas Hold'em Equity Trainer: Built a browser-based trainer (vanilla ES modules) for learning poker equity estimation against 1–5 hidden bot opponents across all streets (preflop → flop → turn → river).",
+            "Poker Odds Engine: Implemented a 7-to-5 evaluator with exact enumeration (turn/river) and 20,000-trial Monte Carlo simulations (preflop/flop) with real-time accuracy feedback.",
+            "AI Stock Predictor: Developed a stock forecasting engine using time-series modeling combined with current market trends and stock fundamental data.",
+            "Market Analytics: Ingests live financial data and key fundamentals to identify historical patterns and forecast stock price movements.",
           ]
         },
       ],
