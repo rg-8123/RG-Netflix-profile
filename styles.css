@@ -401,9 +401,11 @@ a { color: inherit; text-decoration: none; }
 .modal-icons i { font-size: 2rem; }
 .modal-icons .tech-emoji { font-size: 1.6rem; }
 .modal-icons .tech-img-icon { width: 2rem; height: 2rem; object-fit: contain; }
-.modal-cta { margin-top: 22px; }
-.modal-cta a { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; }
-.modal-cta a:hover { filter: brightness(0.9); }
+.modal-cta { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.modal-cta a { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: transform 0.15s ease, filter 0.2s ease; }
+.modal-cta a:hover { filter: brightness(0.9); transform: translateY(-1px); }
+.modal-cta a.btn-play-game { background: #ffffff; color: #111111; font-weight: 700; }
+.modal-cta a.btn-play-game:hover { background: #e6e6e6; color: #000000; filter: none; }
 
 /* ===================== FOOTER ===================== */
 .footer { padding: 40px 4% 60px; border-top: 1px solid #222; color: var(--muted-2); }
