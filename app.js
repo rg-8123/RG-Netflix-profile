@@ -23,18 +23,22 @@ const GITHUB_REPOS = [
     title: "texas-holdem-trainer",
     desc: "Browser-based Texas Hold'em equity trainer featuring a 7-to-5 card evaluator, 20,000-trial Monte Carlo & exact enumeration engines for street-by-street win-rate estimation against 1–5 bot opponents.",
     url: "https://github.com/rg-8123/texas-holdem-trainer",
+    playUrl: "https://rg-8123.github.io/texas-holdem-trainer/",
+    image: "images/poker.png",
     tags: ["JavaScript", "Monte Carlo", "Probability", "Poker"]
   },
   {
     title: "ai-stock-predictor",
     desc: "Stock price forecasting engine using time-series models combined with current market trends and fundamental financial data.",
     url: "https://github.com/rg-8123/ai-stock-predictor",
+    image: "images/stockai.png",
     tags: ["Python", "Time Series", "Pandas", "Stock Fundamentals"]
   },
   {
     title: "mf-report-analyser",
     desc: "Mutual fund portfolio analyzer performing micro-level asset allocation breakdown and tailored investment suggestions based on market trends.",
     url: "https://github.com/rg-8123/mf-report-analyser",
+    image: "images/mf_anlayser.png",
     tags: ["Java", "Spring AI", "Mutual Funds", "Portfolio Analytics"]
   }
 ];
@@ -422,6 +426,7 @@ const ENGINEER = {
           tags: ["JavaScript", "Python", "Time Series", "Monte Carlo"], icons: ["javascript", "python", "llm"], iconTop: ["javascript", "python"],
           modalSubtitle: "Poker equity trainer engine & stock time-series predictive model",
           ctaLabel: "Texas Hold'em Trainer Repo", ctaHref: "https://github.com/rg-8123/texas-holdem-trainer",
+          playUrl: "https://rg-8123.github.io/texas-holdem-trainer/",
           points: [
             "Texas Hold'em Equity Trainer: Built a browser-based trainer (vanilla ES modules) for learning poker equity estimation against 1–5 hidden bot opponents across all streets (preflop → flop → turn → river).",
             "Poker Odds Engine: Implemented a 7-to-5 evaluator with exact enumeration (turn/river) and 20,000-trial Monte Carlo simulations (preflop/flop) with real-time accuracy feedback.",
@@ -661,7 +666,7 @@ function renderNav(profile, key) {
   });
 
   const right = $("#nav-right"); right.innerHTML = "";
-  const resume = create("a", "nav-btn"); resume.href = LINKS.resume; resume.setAttribute("download", ""); resume.textContent = "⬇ Resume";
+  const resume = create("a", "nav-btn"); resume.href = LINKS.resume; resume.setAttribute("download", ""); resume.innerHTML = '⬇ <span class="btn-text">Resume</span>';
   right.appendChild(resume);
 
   const inIcon = create("a", "nav-icon"); inIcon.href = LINKS.linkedin; inIcon.target = "_blank"; inIcon.rel = "noopener"; inIcon.title = "LinkedIn"; inIcon.textContent = "in";
@@ -676,7 +681,7 @@ function renderNav(profile, key) {
   // Profile switcher - opens dropdown
   const switcher = create("button", "nav-switch");
   switcher.id = "nav-switcher";
-  switcher.innerHTML = `<img src="${PROFILE_AVATAR_IMG[key]}" alt="${PROFILE_LABEL[key]}" class="mini-avatar-img" /><span>${PROFILE_LABEL[key]} &#9662;</span>`;
+  switcher.innerHTML = `<img src="${PROFILE_AVATAR_IMG[key]}" alt="${PROFILE_LABEL[key]}" class="mini-avatar-img" /><span class="switch-label">${PROFILE_LABEL[key]} &#9662;</span>`;
   switcher.addEventListener("click", (e) => { e.stopPropagation(); toggleDropdown(key); });
   right.appendChild(switcher);
 
@@ -735,6 +740,7 @@ function buildGithubTrack() {
       grad: "card-grad-6", badge: "REPO", title: repo.title, meta: repo.desc,
       tags: repo.tags || [], icons: ["github"], modalSubtitle: repo.desc,
       points: [repo.desc], ctaLabel: "View on GitHub", ctaHref: repo.url,
+      image: repo.image, playUrl: repo.playUrl,
     });
     track.appendChild(card);
   });
@@ -863,6 +869,15 @@ function openModal(card) {
     const a = create("a"); a.href = card.ctaHref; a.target = "_blank"; a.rel = "noopener";
     a.innerHTML = `<i class="devicon-github-original"></i> ${card.ctaLabel || "View"}`;
     cta.appendChild(a);
+  }
+  if (card.playUrl || card.playHref) {
+    const playBtn = create("a");
+    playBtn.href = card.playUrl || card.playHref;
+    playBtn.target = "_blank";
+    playBtn.rel = "noopener";
+    playBtn.className = "btn-play-game";
+    playBtn.innerHTML = `▶ Play Game`;
+    cta.appendChild(playBtn);
   }
 
   $("#modal-overlay").classList.remove("hidden");
