@@ -666,7 +666,7 @@ function renderNav(profile, key) {
   });
 
   const right = $("#nav-right"); right.innerHTML = "";
-  const resume = create("a", "nav-btn"); resume.href = LINKS.resume; resume.setAttribute("download", ""); resume.textContent = "⬇ Resume";
+  const resume = create("a", "nav-btn"); resume.href = LINKS.resume; resume.setAttribute("download", ""); resume.innerHTML = '⬇ <span class="btn-text">Resume</span>';
   right.appendChild(resume);
 
   const inIcon = create("a", "nav-icon"); inIcon.href = LINKS.linkedin; inIcon.target = "_blank"; inIcon.rel = "noopener"; inIcon.title = "LinkedIn"; inIcon.textContent = "in";
@@ -681,7 +681,7 @@ function renderNav(profile, key) {
   // Profile switcher - opens dropdown
   const switcher = create("button", "nav-switch");
   switcher.id = "nav-switcher";
-  switcher.innerHTML = `<img src="${PROFILE_AVATAR_IMG[key]}" alt="${PROFILE_LABEL[key]}" class="mini-avatar-img" /><span>${PROFILE_LABEL[key]} &#9662;</span>`;
+  switcher.innerHTML = `<img src="${PROFILE_AVATAR_IMG[key]}" alt="${PROFILE_LABEL[key]}" class="mini-avatar-img" /><span class="switch-label">${PROFILE_LABEL[key]} &#9662;</span>`;
   switcher.addEventListener("click", (e) => { e.stopPropagation(); toggleDropdown(key); });
   right.appendChild(switcher);
 
